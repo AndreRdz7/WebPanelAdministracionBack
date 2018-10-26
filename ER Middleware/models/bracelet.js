@@ -10,13 +10,13 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'bracelet'
     });
     bracelet.associate = function(models){
-        ticket_id.belongsTo(models.ticket,{
+        bracelet.belongsTo(models.ticket,{
             foreignKey: 'ticket_id'
         });
-        tour_id.belongsTo(models.tour,{
+        bracelet.belongsTo(models.tour,{
             foreignKey: 'tour_id'
         });
-        activated_at_id.belongsTo(models.activated_at_id,{
+        bracelet.belongsTo(models.activated_at_id,{
             foreignKey: 'activated_at_id'
         });
     }
