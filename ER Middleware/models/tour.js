@@ -14,13 +14,6 @@ module.exports = (sequelize, DataTypes) =>
             tour.hasOne(models.price,{
                 foreignKey: 'tour_id'
             });
-<<<<<<< HEAD
-            tour.hasOne(models.bracelet,{
-=======
-            tour.hasMany(models.bracelet,{
->>>>>>> 35f989cc7804bfc03eb9f93613fabfb7eddc104c
-                foreignKey: 'tour_id'
-            });
             tour.hasOne(models.tour_schedule,{
                 foreignKey: 'tour_id'
             });
