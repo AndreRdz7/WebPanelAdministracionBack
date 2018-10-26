@@ -7,5 +7,10 @@ module.exports = (sequelize, DataTypes) => {
     },{
         tableName: 'image'
     });
+    image.associate = function(models){
+        image.hasMany(models.place_image,{
+            foreignKey: 'id'
+        });
+    };
     return image;
 };

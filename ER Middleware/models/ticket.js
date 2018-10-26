@@ -26,6 +26,9 @@ module.exports = (sequelize, DataTypes) =>
         {
             foreignKey: 'price_id'
         });
-    }
+        ticket.hasMany(models.bracelet, {
+            foreignKey: 'id'
+        });
+    };
     return ticket;
 };

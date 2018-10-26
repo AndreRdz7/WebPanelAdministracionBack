@@ -11,6 +11,10 @@ module.exports = (sequelize, DataTypes) =>
     {
         tableName: 'stop'
     });
-
+    stop.associate = function(models){
+        stop.hasMany(models.tour_stop,{
+            foreignKey: 'id'
+        });
+    };
     return stop;
 };

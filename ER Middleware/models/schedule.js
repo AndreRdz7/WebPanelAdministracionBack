@@ -20,6 +20,9 @@ module.exports = (sequelize, DataTypes) =>
         {
             foreignKey: 'hour_interval_id'
         });
+        schedule.hasMany(models.tour_schedule,{
+            foreignKey: 'id'
+        })
     }
     return schedule;
 };

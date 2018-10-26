@@ -6,5 +6,10 @@ module.exports = (sequelize, DataTypes) => {
     },{
         tableName: 'ticket_type'
     });
+    ticket_type.associate = function(models){
+        ticket_type.hasMany(models.price, {
+            foreignKey: 'id'
+        });
+    };
     return ticket_type;
 };

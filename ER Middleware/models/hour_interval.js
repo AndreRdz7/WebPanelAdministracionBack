@@ -10,6 +10,10 @@ module.exports = (sequelize, DataTypes) =>
     {
         tableName: 'hour_interval'
     });
-
+    hour_interval.associate = function(models){
+        hour_interval.hasMany(models.schedule,{
+            foreignKey: 'id'
+        });
+    };
     return hour_interval;
 };

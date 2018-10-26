@@ -5,5 +5,10 @@ module.exports = (sequelize, DataTypes) => {
     },{
         tableName: 'activated_at'
     });
+    activated_at.associate = function(models){
+        activated_at.hasMany(models.bracelet,{
+            foreignKey: 'id'
+        });
+    };
     return activated_at;
 };

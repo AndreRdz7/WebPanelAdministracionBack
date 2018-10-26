@@ -21,6 +21,9 @@ module.exports = (sequelize, DataTypes) =>
         {
             foreignKey: 'tour_id'
         });
-    }
+        price.hasMany(models.ticket, {
+            foreignKey: 'id'
+        });
+    };
     return price;
 };
