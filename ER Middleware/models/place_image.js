@@ -1,4 +1,4 @@
-'uso strict'
+'use strict'
 
 module.exports = (sequelize, DataTypes) => {
     var place_image = sequelize.define('place_image', {

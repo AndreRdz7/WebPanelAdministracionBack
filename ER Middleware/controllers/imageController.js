@@ -2,14 +2,14 @@ const Sequelize = require('sequelize');
 const winston = require('winston');
 
 module.exports = function(app){
-    let narrative = app.models.schema.narrative;
+    let image = app.models.schema.image;
 
-    let narrativeController = {
+    let imageController = {
         index: function(req,res){
-            narrative.findAll({})
-            .then(function(narrative){
-                winston.log('Succes at getting all narratives from the BD');
-                res.status(200).json(narrative);
+            image.findAll({})
+            .then(function(image){
+                winston.log('Succes at getting all images from the BD');
+                res.status(200).json(image);
             })
             .catch(err => {
                 winston.error(err);
@@ -17,13 +17,13 @@ module.exports = function(app){
             })
         },
         create: function(req,res){
-            narrative.create({
-                audio_path: req.body.audio_path || null,
+            image.create({
+                image_path: req.body.image_path || null,
                 description: req.body.description || null
             })
-            .then(newNarrative => {
-                winston.log('Created a new narrative');
-                res.status(200).json(newNarrative);
+            .then(newImage => {
+                winston.log('Created a new image');
+                res.status(200).json(newImage);
             })
             .catch(err => {
                 winston.error(err);
@@ -31,34 +31,34 @@ module.exports = function(app){
             });
         },
         read: function(req,res){
-            let narrative_id = req.params.id;
-            narrative.findById(req.params.id,{})
-                .then(narrative => {
-                    if(!narrative){
+            let image_id = req.params.id;
+            image.findById(req.params.id,{})
+                .then(image => {
+                    if(!image){
                         return res.status(404).json({
-                            message: 'Narrative not found'
+                            message: 'Image not found'
                         });
                     }
-                    res.status(200).json(narrative);
+                    res.status(200).json(image);
                 })
                 .catch(err => {
                     res.json(err);
                 })
         },
         update: function(req, res){
-            narrative.findById(req.params.narrative_id, {})
-                .then(narrative =>{
-                    if(!narrative){
+            image.findById(req.params.image_id, {})
+                .then(image =>{
+                    if(!image){
                         return res.status(404).json({
-                            message: 'Narrative not found'
+                            message: 'Image not found'
                         });
                     }
-                    narrative
+                    image
                         .update({
-                            audio_path: req.body.audio_path || narrative.audio_path,
-                            description: req.body.description || narrative.description
+                            image_path: req.body.image_path || image.image_path,
+                            description: req.body.description || image.description
                         })
-                        .then(() => res.status(200).json(narrative))
+                        .then(() => res.status(200).json(image))
                         .catch(err => {
                             res.status(400).json(err);
                         })
@@ -68,26 +68,26 @@ module.exports = function(app){
                 })
         },
         delete: function(req,res){
-            narrative.findById(req.params.id)
-                .then(narrative => {
-                    if(!narrative){
+            image.findById(req.params.id)
+                .then(image => {
+                    if(!image){
                         return res.status(400).json({
-                            message: 'Narrative not found'
+                            message: 'Image not found'
                         });
                     }
-                    return narrative
+                    return image
                         .update({
                             active: false
                         })
                         .then(() => res.status(200).json({
-                            message: 'Narrative unactive'
+                            message: 'Image unactive'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
                 })
         }
-    }//narrativeController
+    }//imageController
 
-    return narrativeController;
+    return imageController;
 };
