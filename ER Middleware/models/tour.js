@@ -11,23 +11,23 @@ module.exports = (sequelize, DataTypes) =>
             tableName: 'tour'
         });
         tour.associate = function(models){
-            tour.hasMany(models.price,{
-                foreignKey: 'id'
+            tour.hasOne(models.price,{
+                foreignKey: 'tour_id'
             });
-            tour.hasMany(models.bracelet,{
-                foreignKey: 'id'
+            tour.hasOne(models.bracelet,{
+                foreignKey: 'tour_id'
             });
-            tour.hasMany(models.tour_schedule,{
-                foreignKey: 'id'
+            tour.hasOne(models.tour_schedule,{
+                foreignKey: 'tour_id'
             });
-            tour.hasMany(models.tour_place,{
-                foreignKey: 'id'
+            tour.hasOne(models.tour_place,{
+                foreignKey: 'tour_id'
             });
-            tour.hasMany(models.bus,{
-                foreignKey: 'id'
+            tour.hasOne(models.bus,{
+                foreignKey: 'tour_id'
             });
-            tour.hasMany(models.tour_stop,{
-                foreignKey: 'id'
+            tour.hasOne(models.tour_stop,{
+                foreignKey: 'tour_id'
             });
         };
     return tour;

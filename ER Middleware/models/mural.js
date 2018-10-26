@@ -10,8 +10,8 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'mural'
     });
     mural.associate = function(models){
-        mural.hasMany(models.bus, {
-            foreignKey: 'id'
+        mural.hasOne(models.bus, {
+            foreignKey: 'mural_id'
         });
     };
     return mural;

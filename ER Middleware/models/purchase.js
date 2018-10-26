@@ -22,8 +22,8 @@ module.exports = (sequelize, DataTypes) =>
         {
             foreignKey: 'user_id'
         });
-        purchase.hasMany(models.ticket, {
-            foreignKey: 'id'
+        purchase.hasOne(models.ticket, {
+            foreignKey: 'purchase_id'
         });
     };
     return purchase;

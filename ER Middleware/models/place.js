@@ -24,11 +24,11 @@ module.exports = (sequelize, DataTypes) =>
         {
             foreignKey: 'narrative_id'
         });
-        place.hasMany(models.tour_place,{
-            foreignKey: 'id'
+        place.hasOne(models.tour_place,{
+            foreignKey: 'place_id'
         });
-        place.hasMany(models.place_image,{
-            foreignKey: 'id'
+        place.hasOne(models.place_image,{
+            foreignKey: 'place_id'
         });
 
     };

@@ -8,8 +8,8 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'narrative'
     });
     narrative.associate = function(models){
-        narrative.hasMany(models.place,{
-            foreignKey: 'id'
+        narrative.hasOne(models.place,{
+            foreignKey: 'narrative_id'
         });
     };
     return narrative;

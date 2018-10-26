@@ -20,8 +20,8 @@ module.exports = (sequelize, DataTypes) =>
         {
             foreignKey: 'hour_interval_id'
         });
-        schedule.hasMany(models.tour_schedule,{
-            foreignKey: 'id'
+        schedule.hasOne(models.tour_schedule,{
+            foreignKey: 'schedule_id'
         })
     }
     return schedule;
