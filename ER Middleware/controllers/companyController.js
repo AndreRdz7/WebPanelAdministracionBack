@@ -18,8 +18,16 @@ module.exports = function(app){
         },
         create: function(req,res){
             company.create({
-                audio_path: req.body.audio_path || null,
-                description: req.body.description || null
+                name: req.body.name || null,
+                full_name: req.body.full_name || null,
+                phone_number: req.body.phone_number || null,
+                street: req.body.street || null,
+                postal_code: req.body.postal_code || null,
+                rfc: req.body.rfc || null,
+                ieps: req.body.ieps || null,
+                iva: req.body.iva || null,
+                latitude: req.body.latitude || null,
+                longitud: req.body.longitud || null
             })
             .then(newCompany => {
                 winston.log('Created a new company');
@@ -55,8 +63,17 @@ module.exports = function(app){
                     }
                     company
                         .update({ 
-                            audio_path: req.body.audio_path || company.audio_path,
-                            description: req.body.description || company.description
+                            name: req.body.name || company.name,
+                            full_name: req.body.full_name || company.full_name,
+                            phone_number: req.body.phone_number || company.phone_number,
+                            street: req.body.street || company.street,
+                            postal_code: req.body.postal_code || company.postal_code,
+                            rfc: req.body.rfc || company.rfc,
+                            ieps: req.body.ieps || company.ieps,
+                            iva: req.body.iva || company.iva,
+                            latitude: req.body.latitude || company.latitude,
+                            longitud: req.body.longitud || company.longitud
+                            
                         })
                         .then(() => res.status(200).json(company))
                         .catch(err => {

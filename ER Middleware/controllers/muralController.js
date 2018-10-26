@@ -18,7 +18,9 @@ module.exports = function(app){
         },
         create: function(req,res){
             mural.create({
-                audio_path: req.body.audio_path || null,
+                title: req.body.title || null,
+                author_name: req.body.author_name || null,
+                author_last_name: req.body.author_last_name || null,
                 description: req.body.description || null
             })
             .then(newMural => {
@@ -55,7 +57,9 @@ module.exports = function(app){
                     }
                     mural
                         .update({ 
-                            audio_path: req.body.audio_path || mural.audio_path,
+                            title: req.body.title || mural.title,
+                            author_name: req.body.author_name || mural.author_name,
+                            author_last_name: req.body.author_last_name || mural.author_last_name,
                             description: req.body.description || mural.description
                         })
                         .then(() => res.status(200).json(mural))
