@@ -26,7 +26,7 @@ module.exports = function (app)
                 });
         },
 
-        view: function (req, res) 
+        read: function (req, res) 
         {
             user.findById(req.params.id, {})
                 .then(user => 
@@ -44,7 +44,7 @@ module.exports = function (app)
                 })
         },
 
-        register: function (req, res)
+        create: function (req, res)
         {
             user.create({
                 user_type: req.body.user_type || null,

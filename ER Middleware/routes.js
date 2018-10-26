@@ -7,9 +7,9 @@ module.exports = function(app){
     //User routes
     app.route('/api/user')
         .get(userController.index)
-        .post(userController.register);
+        .post(userController.create);
     app.route('/api/user/:id')
-        .get(userController.view)
+        .get(userController.read)
         .put(userController.update)
         .delete(userController.delete);
 
