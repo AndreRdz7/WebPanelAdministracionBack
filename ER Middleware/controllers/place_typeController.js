@@ -30,7 +30,7 @@ module.exports = function(app){
             });
         },
         read: function(req,res){
-            let place_type = req.params.id;
+            let place_type_id = req.params.id;
             place_type.findById(req.params.id,{})
                 .then(place_type => {
                     if(!place_type){
