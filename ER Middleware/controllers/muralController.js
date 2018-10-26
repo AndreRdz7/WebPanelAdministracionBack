@@ -2,14 +2,14 @@ const Sequelize = require('sequelize');
 const winston = require('winston');
 
 module.exports = function(app){
-    let narrative = app.models.schema.narrative;
+    let mural = app.models.schema.mural;
 
-    let narrativeController = {
+    let muralController = {
         index: function(req,res){
-            narrative.findAll({})
-            .then(function(narrative){
-                winston.log('Succes at getting all narratives from the BD');
-                res.status(200).json(narrative);
+            mural.findAll({})
+            .then(function(mural){
+                winston.log('Succes at getting all mural from the BD');
+                res.status(200).json(mural);
             })
             .catch(err => {
                 winston.error(err);
@@ -17,13 +17,13 @@ module.exports = function(app){
             })
         },
         create: function(req,res){
-            narrative.create({
+            mural.create({
                 audio_path: req.body.audio_path || null,
                 description: req.body.description || null
             })
-            .then(newNarrative => {
-                winston.log('Created a new narrative');
-                res.status(200).json(newNarrative);
+            .then(newMural => {
+                winston.log('Created a new mural');
+                res.status(200).json(newMural);
             })
             .catch(err => {
                 winston.error(err);
@@ -31,34 +31,34 @@ module.exports = function(app){
             });
         },
         read: function(req,res){
-            let narrative_id = req.params.id;
-            narrative.findById(req.params.id,{})
-                .then(narrative => {
-                    if(!narrative){
+            let mural_id = req.params.id;
+            mural.findById(req.params.id,{})
+                .then(mural => {
+                    if(!mural){
                         return res.status(404).json({
-                            message: 'Narrative not found'
+                            message: 'Mural not found'
                         });
                     }
-                    res.status(200).json(narrative);
+                    res.status(200).json(mural);
                 })
                 .catch(err => {
                     res.json(err);
                 })
         },
         update: function(req, res){
-            narrative.findById(req.params.narrative_id, {})
-                .then(narrative =>{
-                    if(!narrative){
+            mural.findById(req.params.mural_id, {})
+                .then(mural =>{
+                    if(!mural){
                         return res.status(404).json({
-                            message: 'Narrative not found'
+                            message: 'Mural not found'
                         });
                     }
-                    narrative
-                        .update({
-                            audio_path: req.body.audio_path || narrative.audio_path,
-                            description: req.body.description || narrative.description
+                    mural
+                        .update({ 
+                            audio_path: req.body.audio_path || mural.audio_path,
+                            description: req.body.description || mural.description
                         })
-                        .then(() => res.status(200).json(narrative))
+                        .then(() => res.status(200).json(mural))
                         .catch(err => {
                             res.status(400).json(err);
                         })
@@ -68,26 +68,26 @@ module.exports = function(app){
                 })
         },
         delete: function(req,res){
-            narrative.findById(req.params.id)
-                .then(narrative => {
-                    if(!narrative){
+            mural.findById(req.params.id)
+                .then(mural => {
+                    if(!mural){
                         return res.status(400).json({
-                            message: 'Narrative not found'
+                            message: 'Mural not found'
                         });
                     }
-                    return narrative
+                    return mural
                         .update({
                             active: false
                         })
                         .then(() => res.status(200).json({
-                            message: 'Narrative unactive'
+                            message: 'Mural unactive'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
                 })
         }
-    }//narrativeController
+    }//muralController
 
-    return narrativeController;
+    return muralController;
 };
