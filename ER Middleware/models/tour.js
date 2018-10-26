@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) =>
                 foreignKey: 'id'
             });
             tour.hasMany(models.bracelet,{
-                foreignKey: 'tour_id'
+                foreignKey: 'id'
             });
             tour.hasMany(models.tour_schedule,{
                 foreignKey: 'id'
