@@ -15,6 +15,10 @@ module.exports = (sequelize, DataTypes) =>
     {
         tableName: 'user'
     });
-
+    user.associate = function(models){
+        user.belongsTo(models.purchase, {
+            foreignKey: 'id'
+        });
+    };
     return user;
 }

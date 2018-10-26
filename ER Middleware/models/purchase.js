@@ -22,6 +22,9 @@ module.exports = (sequelize, DataTypes) =>
         {
             foreignKey: 'user_id'
         });
-    }
+        purchase.hasMany(models.ticket, {
+            foreignKey: 'id'
+        });
+    };
     return purchase;
 };

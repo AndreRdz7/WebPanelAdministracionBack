@@ -6,5 +6,10 @@ module.exports = (sequelize, DataTypes) => {
     }, {
         tableName: 'place_type'
     });
+    place_type.associate = function(models){
+        place_type.hasMany(models.place, {
+            foreignKey: 'id'
+        });
+    };
     return place_type;
 };

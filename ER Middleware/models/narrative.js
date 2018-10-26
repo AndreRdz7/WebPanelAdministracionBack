@@ -7,5 +7,10 @@ module.exports = (sequelize, DataTypes) => {
     },{
         tableName: 'narrative'
     });
+    narrative.associate = function(models){
+        narrative.hasMany(models.place,{
+            foreignKey: 'id'
+        });
+    };
     return narrative;
 };

@@ -24,6 +24,13 @@ module.exports = (sequelize, DataTypes) =>
         {
             foreignKey: 'narrative_id'
         });
-    }
+        place.hasMany(models.tour_place,{
+            foreignKey: 'id'
+        });
+        place.hasMany(models.place_image,{
+            foreignKey: 'id'
+        });
+
+    };
     return place;
 };
