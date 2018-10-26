@@ -18,7 +18,7 @@ module.exports = function(app){
         .get(narrativeController.index)
         .post(narrativeController.create);
     app.route('/api/narrative/:id')
-        .get(narrativeController.view)
+        .get(narrativeController.read)
         .put(narrativeController.update)
         .delete(narrativeController.delete);
 };

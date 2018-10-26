@@ -30,7 +30,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
-        view: function(req,res){
+        read: function(req,res){
             let narrative_id = req.params.id;
             narrative.findById(req.params.id,{})
                 .then(narrative => {
