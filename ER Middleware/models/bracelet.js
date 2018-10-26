@@ -1,4 +1,4 @@
-'uso strict'
+'use strict'
 
 module.exports = (sequelize, DataTypes) => {
     var bracelet = sequelize.define('bracelet', {

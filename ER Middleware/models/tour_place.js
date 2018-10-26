@@ -1,4 +1,4 @@
-'uso strict'
+'use strict'
 
 module.exports = (sequelize, DataTypes) => {
     var tour_place = sequelize.define('tour_place', {
