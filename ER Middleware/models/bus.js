@@ -11,10 +11,10 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'bus'
     });
     bus.associate = function(models){
-        tour_id.belongsTo(models.tour,{
+        bus.belongsTo(models.tour,{
             foreignKey: 'tour_id'
         });
-        mural_id.belongsTo(models.mural,{
+        bus.belongsTo(models.mural,{
             foreignKey: 'mural_id'
         });
     }
