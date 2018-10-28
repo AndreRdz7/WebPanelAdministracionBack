@@ -4,6 +4,7 @@ module.exports = function(app){
     let userController = app.controllers.userController;
     let narrativeController = app.controllers.narrativeController;
 
+    /*
     //User routes
     app.route('/api/user')
         .get(userController.index)
@@ -12,7 +13,7 @@ module.exports = function(app){
         .get(userController.read)
         .put(userController.update)
         .delete(userController.delete);
-
+    */ 
     //Narrative routes
     app.route('/api/narrative')
         .get(narrativeController.index)
@@ -21,7 +22,7 @@ module.exports = function(app){
         .get(narrativeController.read)
         .put(narrativeController.update)
         .delete(narrativeController.delete);
-
+    
     //Company routes
     app.route('/api/company')
         .get(companyController.index)
@@ -102,6 +103,7 @@ module.exports = function(app){
         .get(activated_atController.read)
         .put(activated_atController.update)
         .delete(activated_atController.delete);
+    
 
     //Image routes
     app.route('/api/image')
@@ -111,5 +113,5 @@ module.exports = function(app){
         .get(imageController.read)
         .put(imageController.update)
         .delete(imageController.delete);
-        
+    
 };
