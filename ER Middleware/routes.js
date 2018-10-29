@@ -79,15 +79,6 @@ module.exports = function(app){
         .get(priceController.read)
         .put(priceController.update)
         .delete(priceController.delete);
-
-    //User routes
-    app.route('/api/user')
-        .get(userController.index)
-        .post(userController.create);
-    app.route('/api/user/:id')
-        .get(userController.read)
-        .put(userController.update)
-        .delete(userController.delete);
     
     //Place routes
     app.route('/api/place')
@@ -232,5 +223,14 @@ module.exports = function(app){
         .get(imageController.read)
         .put(imageController.update)
         .delete(imageController.delete);
+
+    //User routes
+    app.route('/api/user')
+        .get(userController.index)
+        .post(userController.create);
+    app.route('/api/user/:id')
+        .get(userController.read)
+        .put(userController.update)
+        .delete(userController.delete);
     
 };
