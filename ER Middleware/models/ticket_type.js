@@ -8,7 +8,8 @@ module.exports = (sequelize, DataTypes) => {
     });
     ticket_type.associate = function(models){
         ticket_type.hasOne(models.price, {
-            foreignKey: 'ticket_type_id'
+            foreignKey: 'ticket_type_id',
+            //as: 'ticket_type_id'
         });
     };
     return ticket_type;

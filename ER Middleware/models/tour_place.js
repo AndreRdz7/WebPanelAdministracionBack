@@ -9,10 +9,12 @@ module.exports = (sequelize, DataTypes) => {
     });
     tour_place.associate = function(models){
         tour_place.belongsTo(models.tour,{
-            foreignKey: 'tour_id'
+            foreignKey: 'tour_id',
+            //as: 'tour_id'
         });
         tour_place.belongsTo(models.place,{
-            foreignKey: 'place_id'
+            foreignKey: 'place_id',
+            //as: 'place_id'
         });
     }
     return tour_place;

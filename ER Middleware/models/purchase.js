@@ -16,14 +16,17 @@ module.exports = (sequelize, DataTypes) =>
     {
         purchase.belongsTo(models.company,
         {
-            foreignKey: 'company_id'
+            foreignKey: 'company_id',
+            //as: 'company_id'
         });
         purchase.belongsTo(models.user,
         {
-            foreignKey: 'user_id'
+            foreignKey: 'user_id',
+            //as: 'user_id'
         });
         purchase.hasOne(models.ticket, {
-            foreignKey: 'purchase_id'
+            foreignKey: 'purchase_id',
+            //as: 'purchase_id'
         });
     };
     return purchase;

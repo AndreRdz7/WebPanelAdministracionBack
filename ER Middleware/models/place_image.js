@@ -9,10 +9,12 @@ module.exports = (sequelize, DataTypes) => {
     });
     place_image.associate = function(models){
         place_image.belongsTo(models.place,{
-            foreignKey: 'place_id'
+            foreignKey: 'place_id',
+            //as: 'place_id'
         });
         place_image.belongsTo(models.image,{
-            foreignKey: 'image_id'
+            foreignKey: 'image_id',
+            //as: 'image_id'
         });
     }
     return place_image;

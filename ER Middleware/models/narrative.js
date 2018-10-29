@@ -9,7 +9,8 @@ module.exports = (sequelize, DataTypes) => {
     });
     narrative.associate = function(models){
         narrative.hasOne(models.place,{
-            foreignKey: 'narrative_id'
+            foreignKey: 'narrative_id',
+            //as: 'narrative_id'
         });
     };
     return narrative;

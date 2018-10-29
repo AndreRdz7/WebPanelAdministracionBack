@@ -17,7 +17,8 @@ module.exports = (sequelize, DataTypes) => {
     });
     company.associate = function(models){
         company.hasOne(models.purchase, {
-            foreignKey: 'company_id'
+            foreignKey: 'company_id',
+            //as: 'company_id'
         });
     };
     return company;

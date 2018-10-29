@@ -8,7 +8,8 @@ module.exports = (sequelize, DataTypes) => {
     });
     place_type.associate = function(models){
         place_type.hasOne(models.place, {
-            foreignKey: 'place_type_id'
+            foreignKey: 'place_type_id',
+            //as: 'place_type_id'
         });
     };
     return place_type;

@@ -9,7 +9,8 @@ module.exports = (sequelize, DataTypes) => {
     });
     image.associate = function(models){
         image.hasOne(models.place_image,{
-            foreignKey: 'image_id'
+            foreignKey: 'image_id',
+            //as: 'image_id'
         });
     };
     return image;

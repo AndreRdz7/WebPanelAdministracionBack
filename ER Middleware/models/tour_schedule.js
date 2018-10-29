@@ -14,11 +14,13 @@ module.exports = (sequelize, DataTypes) =>
     {
         tour_schedule.belongsTo(models.tour,
         {
-            foreignKey: 'tour_id'
+            foreignKey: 'tour_id',
+            //as: 'tour_id'
         });
         tour_schedule.belongsTo(models.schedule,
         {
-            foreignKey: 'schedule_id'
+            foreignKey: 'schedule_id',
+            //as: 'schedule_id'
         });
     }
     return tour_schedule;

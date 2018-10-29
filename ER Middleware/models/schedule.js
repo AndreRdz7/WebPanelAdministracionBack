@@ -14,14 +14,17 @@ module.exports = (sequelize, DataTypes) =>
     {
         schedule.belongsTo(models.date_interval,
         {
-            foreignKey: 'date_interval_id'
+            foreignKey: 'date_interval_id',
+            //as: 'date_interval_id'
         });
         schedule.belongsTo(models.hour_interval,
         {
-            foreignKey: 'hour_interval_id'
+            foreignKey: 'hour_interval_id',
+            //as: 'hour_interval_id'
         });
         schedule.hasOne(models.tour_schedule,{
-            foreignKey: 'schedule_id'
+            foreignKey: 'schedule_id',
+            //as: 'schedule_id'
         })
     }
     return schedule;

@@ -12,7 +12,8 @@ module.exports = (sequelize, DataTypes) =>
     });
     date_interval.associate = function(models){
         date_interval.hasOne(models.schedule, {
-            foreignKey: 'date_interval_id'
+            foreignKey: 'date_interval_id',
+            //as: 'date_interval_id'
         })
     }
     return date_interval;

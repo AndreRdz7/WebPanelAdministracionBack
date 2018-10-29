@@ -13,7 +13,8 @@ module.exports = (sequelize, DataTypes) =>
     });
     stop.associate = function(models){
         stop.hasOne(models.tour_stop,{
-            foreignKey: 'stop_id'
+            foreignKey: 'stop_id',
+            //as: 'stop_id'
         });
     };
     return stop;

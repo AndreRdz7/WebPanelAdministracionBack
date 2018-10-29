@@ -15,14 +15,17 @@ module.exports = (sequelize, DataTypes) =>
     {
         price.belongsTo(models.ticket_type,
         {
-            foreignKey: 'ticket_type_id'
+            foreignKey: 'ticket_type_id',
+            //as: 'ticket_type_id'
         });
         price.belongsTo(models.tour,
         {
-            foreignKey: 'tour_id'
+            foreignKey: 'tour_id',
+            //as: 'tour_id'
         });
         price.hasOne(models.ticket, {
-            foreignKey: 'price_id'
+            foreignKey: 'price_id',
+            //as: 'price_id'
         });
     };
     return price;

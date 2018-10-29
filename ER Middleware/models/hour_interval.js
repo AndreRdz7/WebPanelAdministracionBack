@@ -12,7 +12,8 @@ module.exports = (sequelize, DataTypes) =>
     });
     hour_interval.associate = function(models){
         hour_interval.hasOne(models.schedule,{
-            foreignKey: 'hour_interval_id'
+            foreignKey: 'hour_interval_id',
+            //as: 'hour_interval_id'
         });
     };
     return hour_interval;

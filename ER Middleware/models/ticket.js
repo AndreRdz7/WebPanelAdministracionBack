@@ -20,14 +20,17 @@ module.exports = (sequelize, DataTypes) =>
     {
         ticket.belongsTo(models.purchase,
         {
-            foreignKey: 'purchase_id'
+            foreignKey: 'purchase_id',
+            //as: 'purchase_id'
         });
         ticket.belongsTo(models.price,
         {
-            foreignKey: 'price_id'
+            foreignKey: 'price_id',
+            //as: 'price_id'
         });
         ticket.hasOne(models.bracelet, {
-            foreignKey: 'ticket_id'
+            foreignKey: 'ticket_id',
+            //as: 'ticket_id'
         });
     };
     return ticket;

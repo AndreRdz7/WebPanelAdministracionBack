@@ -14,11 +14,13 @@ module.exports = (sequelize, DataTypes) =>
     {
         tour_stop.belongsTo(models.tour,
         {
-            foreignKey: 'tour_id'
+            foreignKey: 'tour_id',
+            //as: 'tour_id'
         });
         tour_stop.belongsTo(models.stop,
         {
-            foreignKey: 'stop_id'
+            foreignKey: 'stop_id',
+            //as: 'stop_id'
         });
     }
     return tour_stop;

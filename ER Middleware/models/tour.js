@@ -12,22 +12,28 @@ module.exports = (sequelize, DataTypes) =>
         });
         tour.associate = function(models){
             tour.hasOne(models.price,{
-                foreignKey: 'tour_id'
+                foreignKey: 'tour_id',
+                //as: 'tour_id'
             });
             tour.hasOne(models.bracelet, {
-                foreignKey: 'tour_id'
+                foreignKey: 'tour_id',
+                //as: 'tour_id'
             });
             tour.hasOne(models.tour_schedule,{
-                foreignKey: 'tour_id'
+                foreignKey: 'tour_id',
+                //as: 'tour_id'
             });
             tour.hasOne(models.tour_place,{
-                foreignKey: 'tour_id'
+                foreignKey: 'tour_id',
+                //as: 'tour_id'
             });
             tour.hasOne(models.bus,{
-                foreignKey: 'tour_id'
+                foreignKey: 'tour_id',
+                //as: 'tour_id'
             });
             tour.hasOne(models.tour_stop,{
-                foreignKey: 'tour_id'
+                foreignKey: 'tour_id',
+                //as: 'tour_id'
             });
         };
     return tour;

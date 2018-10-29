@@ -12,10 +12,12 @@ module.exports = (sequelize, DataTypes) => {
     });
     bus.associate = function(models){
         bus.belongsTo(models.tour,{
-            foreignKey: 'tour_id'
+            foreignKey: 'tour_id',
+            //as: 'tour_id'
         });
         bus.belongsTo(models.mural,{
-            foreignKey: 'mural_id'
+            foreignKey: 'mural_id',
+            //as: 'mural_id'
         });
     }
     return bus;

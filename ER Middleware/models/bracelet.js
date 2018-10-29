@@ -12,15 +12,15 @@ module.exports = (sequelize, DataTypes) => {
     bracelet.associate = function(models){
         bracelet.belongsTo(models.ticket,{
             foreignKey: 'ticket_id',
-            as: 'ticket'
+            //as: 'ticket_id'
         });
         bracelet.belongsTo(models.tour,{
             foreignKey: 'tour_id',
-            as: 'tour'
+            //as: 'tour_id'
         });
-        bracelet.belongsTo(models.activated_at_id,{
+        bracelet.belongsTo(models.activated_at,{
             foreignKey: 'activated_at_id',
-            as: 'activated_at'
+            //as: 'activated_at_id'
         });
     };
     return bracelet;
