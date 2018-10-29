@@ -91,7 +91,7 @@ module.exports = function(app){
                         })
                 })
         }
-    }//place_imageController
+    }
 
     return stopController;
 };
