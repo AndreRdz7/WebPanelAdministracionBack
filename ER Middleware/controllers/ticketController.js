@@ -52,7 +52,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            ticket.findById(req.params.ticket_id, {})
+            ticket.findById(req.params.id, {})
                 .then(ticket =>{
                     if(!ticket){
                         return res.status(404).json({

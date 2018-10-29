@@ -46,7 +46,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            schedule.findById(req.params.schedule_id, {})
+            schedule.findById(req.params.id, {})
                 .then(schedule =>{
                     if(!schedule){
                         return res.status(404).json({

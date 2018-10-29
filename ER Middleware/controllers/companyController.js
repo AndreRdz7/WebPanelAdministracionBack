@@ -54,7 +54,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            company.findById(req.params.company_id, {})
+            company.findById(req.params.id, {})
                 .then(company =>{
                     if(!company){
                         return res.status(404).json({

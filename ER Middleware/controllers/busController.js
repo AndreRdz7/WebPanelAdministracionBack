@@ -49,7 +49,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            bus.findById(req.params.bus_id, {})
+            bus.findById(req.params.id, {})
                 .then(bus =>{
                     if(!bus){
                         return res.status(404).json({

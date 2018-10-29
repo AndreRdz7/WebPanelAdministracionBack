@@ -45,7 +45,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            place_type.findById(req.params.place_type_id, {})
+            place_type.findById(req.params.id, {})
                 .then(place_type =>{
                     if(!place_type){
                         return res.status(404).json({

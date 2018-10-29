@@ -47,7 +47,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            date_interval.findById(req.params.date_interval_id, {})
+            date_interval.findById(req.params.id, {})
                 .then(date_interval =>{
                     if(!date_interval){
                         return res.status(404).json({

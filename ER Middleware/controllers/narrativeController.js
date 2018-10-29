@@ -46,7 +46,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            narrative.findById(req.params.narrative_id, {})
+            narrative.findById(req.params.id, {})
                 .then(narrative =>{
                     if(!narrative){
                         return res.status(404).json({

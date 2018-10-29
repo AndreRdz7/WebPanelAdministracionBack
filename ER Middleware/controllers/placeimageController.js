@@ -46,7 +46,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            place_image.findById(req.params.place_image_id, {})
+            place_image.findById(req.params.id, {})
                 .then(place_image =>{
                     if(!place_image){
                         return res.status(404).json({

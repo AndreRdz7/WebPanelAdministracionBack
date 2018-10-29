@@ -48,7 +48,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            bracelet.findById(req.params.bracelet_id, {})
+            bracelet.findById(req.params.id, {})
                 .then(bracelet =>{
                     if(!bracelet){
                         return res.status(404).json({

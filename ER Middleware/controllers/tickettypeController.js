@@ -45,7 +45,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            ticket_type.findById(req.params.ticket_type_id, {})
+            ticket_type.findById(req.params.id, {})
                 .then(ticket_type =>{
                     if(!ticket_type){
                         return res.status(404).json({

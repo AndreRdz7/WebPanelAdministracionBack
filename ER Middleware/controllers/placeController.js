@@ -50,7 +50,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            place.findById(req.params.place_id, {})
+            place.findById(req.params.id, {})
                 .then(place =>{
                     if(!place){
                         return res.status(404).json({

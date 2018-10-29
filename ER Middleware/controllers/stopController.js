@@ -48,7 +48,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            stop.findById(req.params.stop_id, {})
+            stop.findById(req.params.id, {})
                 .then(stop =>{
                     if(!stop){
                         return res.status(404).json({

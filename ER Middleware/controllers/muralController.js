@@ -48,7 +48,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            mural.findById(req.params.mural_id, {})
+            mural.findById(req.params.id, {})
                 .then(mural =>{
                     if(!mural){
                         return res.status(404).json({

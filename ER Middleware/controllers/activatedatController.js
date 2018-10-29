@@ -44,7 +44,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            activated_at.findById(req.params.activated_at_id, {})
+            activated_at.findById(req.params.id, {})
                 .then(activated_at =>{
                     if(!activated_at){
                         return res.status(404).json({

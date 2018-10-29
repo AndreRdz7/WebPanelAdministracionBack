@@ -47,7 +47,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            hour_interval.findById(req.params.hour_interval_id, {})
+            hour_interval.findById(req.params.id, {})
                 .then(hour_interval =>{
                     if(!hour_interval){
                         return res.status(404).json({

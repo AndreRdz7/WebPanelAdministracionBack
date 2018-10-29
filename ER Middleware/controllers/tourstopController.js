@@ -46,7 +46,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            tour_stop.findById(req.params.tour_stop, {})
+            tour_stop.findById(req.params.id, {})
                 .then(tour_stop =>{
                     if(!tour_stop){
                         return res.status(404).json({

@@ -47,7 +47,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            price.findById(req.params.price_id, {})
+            price.findById(req.params.id, {})
                 .then(price =>{
                     if(!price){
                         return res.status(404).json({
