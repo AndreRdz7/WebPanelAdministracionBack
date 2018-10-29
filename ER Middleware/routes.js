@@ -75,7 +75,7 @@ module.exports = function(app){
     app.route('/api/price')
         .get(priceController.index)
         .post(priceController.create);
-    app.route('/api/pri /:id')
+    app.route('/api/price/:id')
         .get(priceController.read)
         .put(priceController.update)
         .delete(priceController.delete);
