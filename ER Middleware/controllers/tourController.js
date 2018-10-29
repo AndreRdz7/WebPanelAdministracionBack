@@ -47,7 +47,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            tour.findById(req.params.tour_id, {})
+            tour.findById(req.params.id, {})
                 .then(tour =>{
                     if(!tour){
                         return res.status(404).json({
@@ -69,24 +69,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             tour.findById(req.params.id)
                 .then(tour => {
-                    if(!tour){
+                    if (!tour) {
                         return res.status(400).json({
-                            message: 'Tour not found'
+                            message: 'Tour Not Found'
                         });
                     }
-                    return tour
-                        .update({
-                            active: false
-                        })
+                    return tour.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Tour unactive'
+                            message: 'Tour deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }

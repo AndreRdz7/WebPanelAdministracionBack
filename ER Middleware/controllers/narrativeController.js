@@ -46,7 +46,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            narrative.findById(req.params.narrative_id, {})
+            narrative.findById(req.params.id, {})
                 .then(narrative =>{
                     if(!narrative){
                         return res.status(404).json({
@@ -67,24 +67,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             narrative.findById(req.params.id)
                 .then(narrative => {
-                    if(!narrative){
+                    if (!narrative) {
                         return res.status(400).json({
-                            message: 'Narrative not found'
+                            message: 'Narrative Not Found'
                         });
                     }
-                    return narrative
-                        .update({
-                            active: false
-                        })
+                    return narrative.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Narrative unactive'
+                            message: 'Narrative deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }//narrativeController

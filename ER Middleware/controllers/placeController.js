@@ -50,7 +50,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            place.findById(req.params.place_id, {})
+            place.findById(req.params.id, {})
                 .then(place =>{
                     if(!place){
                         return res.status(404).json({
@@ -75,24 +75,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             place.findById(req.params.id)
                 .then(place => {
-                    if(!place){
+                    if (!place) {
                         return res.status(400).json({
-                            message: 'Place not found'
+                            message: 'Place Not Found'
                         });
                     }
-                    return place
-                        .update({
-                            active: false
-                        })
+                    return place.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Place unactive'
+                            message: 'Placew deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }//place_imageController

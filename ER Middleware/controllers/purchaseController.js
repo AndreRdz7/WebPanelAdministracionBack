@@ -48,7 +48,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            purchase.findById(req.params.purchase_id, {})
+            purchase.findById(req.params.id, {})
                 .then(purchase =>{
                     if(!purchase){
                         return res.status(404).json({
@@ -71,24 +71,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             purchase.findById(req.params.id)
                 .then(purchase => {
-                    if(!purchase){
+                    if (!purchase) {
                         return res.status(400).json({
-                            message: 'Purchase not found'
+                            message: 'Purchase Not Found'
                         });
                     }
-                    return purchase
-                        .update({
-                            active: false
-                        })
+                    return purchase.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Purchase unactive'
+                            message: 'Purchase deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }//place_imageController

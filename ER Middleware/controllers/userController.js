@@ -100,7 +100,6 @@ module.exports = function (app)
                     res.json(err);
                 })
         },
-
         delete: function (req, res) {
             user.findById(req.params.id)
                 .then(user => {

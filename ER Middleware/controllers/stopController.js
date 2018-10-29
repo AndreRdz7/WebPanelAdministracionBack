@@ -48,7 +48,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            stop.findById(req.params.stop_id, {})
+            stop.findById(req.params.id, {})
                 .then(stop =>{
                     if(!stop){
                         return res.status(404).json({
@@ -71,24 +71,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             stop.findById(req.params.id)
                 .then(stop => {
-                    if(!stop){
+                    if (!stop) {
                         return res.status(400).json({
-                            message: 'Stop not found'
+                            message: 'Stop Not Found'
                         });
                     }
-                    return stop
-                        .update({
-                            active: false
-                        })
+                    return stop.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Stop unactive'
+                            message: 'Stop deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }

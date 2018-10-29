@@ -18,8 +18,9 @@ module.exports = function(app){
         },
         create: function(req,res){
             date_interval.create({
-                tour_id: req.body.tour_id || null,
-                schedule_id: req.body.schedule_id || null
+                start_date: req.body.start_date || null,
+                end_date: req.body.end_date || null,
+                status: req.body.status || null
             })
             .then(newDate_interval => {
                 winston.log('Created a new date interval');
@@ -46,7 +47,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            date_interval.findById(req.params.date_interval_id, {})
+            date_interval.findById(req.params.id, {})
                 .then(date_interval =>{
                     if(!date_interval){
                         return res.status(404).json({
@@ -55,8 +56,9 @@ module.exports = function(app){
                     }
                     date_interval
                         .update({ 
-                            tour_id: req.body.tour_id || date_interval.tour_id,
-                            schedule_id: req.body.schedule_id || date_interval.schedule_id
+                            start_date: req.body.start_date || date_interval.start_date,
+                            end_date: req.body.end_date || date_interval.end_date,
+                            status: req.body.status || date_interval.status
                         })
                         .then(() => res.status(200).json(date_interval))
                         .catch(err => {
@@ -67,24 +69,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             date_interval.findById(req.params.id)
                 .then(date_interval => {
-                    if(!date_interval){
+                    if (!date_interval) {
                         return res.status(400).json({
-                            message: 'Date interval not found'
+                            message: 'Date interval Not Found'
                         });
                     }
-                    return date_interval
-                        .update({
-                            active: false
-                        })
+                    return date_interval.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Date interval unactive'
+                            message: 'Date interval deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }

@@ -52,7 +52,7 @@ module.exports = function(app){
                 })
         },
         update: function(req, res){
-            ticket.findById(req.params.ticket_id, {})
+            ticket.findById(req.params.id, {})
                 .then(ticket =>{
                     if(!ticket){
                         return res.status(404).json({
@@ -79,24 +79,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             ticket.findById(req.params.id)
                 .then(ticket => {
-                    if(!ticket){
+                    if (!ticket) {
                         return res.status(400).json({
-                            message: 'Ticket not found'
+                            message: 'Ticket Not Found'
                         });
                     }
-                    return ticket
-                        .update({
-                            active: false
-                        })
+                    return ticket.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Ticket unactive'
+                            message: 'Ticket deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }//ticketController
