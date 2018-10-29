@@ -79,7 +79,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        ddelete: function (req, res) {
+        delete: function (req, res) {
             ticket.findById(req.params.id)
                 .then(ticket => {
                     if (!ticket) {

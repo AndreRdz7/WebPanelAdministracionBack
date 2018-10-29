@@ -88,8 +88,8 @@ module.exports = function(app){
         .get(placeController.read)
         .put(placeController.update)
         .delete(placeController.delete);
-
-    //Ticket routes
+    
+    //Tour routes
     app.route('/api/ticket')
         .get(ticketController.index)
         .post(ticketController.create);
@@ -97,7 +97,7 @@ module.exports = function(app){
         .get(ticketController.read)
         .put(ticketController.update)
         .delete(ticketController.delete);
-
+    
     //Tour routes
     app.route('/api/tour')
         .get(tourController.index)
