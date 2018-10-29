@@ -69,24 +69,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             date_interval.findById(req.params.id)
                 .then(date_interval => {
-                    if(!date_interval){
+                    if (!date_interval) {
                         return res.status(400).json({
-                            message: 'Date interval not found'
+                            message: 'Date interval Not Found'
                         });
                     }
-                    return date_interval
-                        .update({
-                            active: false
-                        })
+                    return date_interval.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Date interval unactive'
+                            message: 'Date interval deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }

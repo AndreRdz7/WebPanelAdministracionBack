@@ -67,24 +67,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             schedule.findById(req.params.id)
                 .then(schedule => {
-                    if(!schedule){
+                    if (!schedule) {
                         return res.status(400).json({
-                            message: 'Schedule not found'
+                            message: 'Schedule Not Found'
                         });
                     }
-                    return schedule
-                        .update({
-                            active: false
-                        })
+                    return schedule.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Schedule unactive'
+                            message: 'Schedule deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }

@@ -67,24 +67,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             image.findById(req.params.id)
                 .then(image => {
-                    if(!image){
+                    if (!image) {
                         return res.status(400).json({
-                            message: 'Image not found'
+                            message: 'Image Not Found'
                         });
                     }
-                    return image
-                        .update({
-                            active: false
-                        })
+                    return image.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Image unactive'
+                            message: 'Image deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }//imageController

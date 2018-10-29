@@ -73,24 +73,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             bus.findById(req.params.id)
                 .then(bus => {
-                    if(!bus){
+                    if (!bus) {
                         return res.status(400).json({
-                            message: 'Bus not found'
+                            message: 'Bus Not Found'
                         });
                     }
-                    return bus
-                        .update({
-                            active: false
-                        })
+                    return bus.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Bus unactive'
+                            message: 'Bus deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }//busController

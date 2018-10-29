@@ -84,24 +84,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             company.findById(req.params.id)
                 .then(company => {
-                    if(!company){
+                    if (!company) {
                         return res.status(400).json({
-                            message: 'Company not found'
+                            message: 'Company Not Found'
                         });
                     }
-                    return company
-                        .update({
-                            active: false
-                        })
+                    return company.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Company unactive'
+                            message: 'Company deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }//companyController

@@ -65,24 +65,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             ticket_type.findById(req.params.id)
                 .then(ticket_type => {
-                    if(!ticket_type){
+                    if (!ticket_type) {
                         return res.status(400).json({
-                            message: 'Ticket type not found'
+                            message: 'Ticket type Not Found'
                         });
                     }
-                    return ticket_type
-                        .update({
-                            active: false
-                        })
+                    return ticket_type.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Ticket type unactive'
+                            message: 'Ticket type deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }//ticket_typeController

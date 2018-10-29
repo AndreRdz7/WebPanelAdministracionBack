@@ -71,24 +71,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             mural.findById(req.params.id)
                 .then(mural => {
-                    if(!mural){
+                    if (!mural) {
                         return res.status(400).json({
-                            message: 'Mural not found'
+                            message: 'Mural Not Found'
                         });
                     }
-                    return mural
-                        .update({
-                            active: false
-                        })
+                    return mural.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Mural unactive'
+                            message: 'Mural deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }//muralController

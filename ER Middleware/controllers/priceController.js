@@ -69,24 +69,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             price.findById(req.params.id)
                 .then(price => {
-                    if(!price){
+                    if (!price) {
                         return res.status(400).json({
-                            message: 'Price not found'
+                            message: 'Price Not Found'
                         });
                     }
-                    return price
-                        .update({
-                            active: false
-                        })
+                    return price.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Price unactive'
+                            message: 'Price deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }//place_imageController

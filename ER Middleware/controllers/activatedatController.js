@@ -63,24 +63,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             activated_at.findById(req.params.id)
                 .then(activated_at => {
-                    if(!activated_at){
+                    if (!activated_at) {
                         return res.status(400).json({
-                            message: 'Activarion not found'
+                            message: 'Activation Not Found'
                         });
                     }
-                    return activated_at
-                        .update({
-                            active: false
-                        })
+                    return activated_at.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Activation unactive'
+                            message: 'Activartion deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }//activated_atController

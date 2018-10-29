@@ -67,24 +67,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             tour_stop.findById(req.params.id)
                 .then(tour_stop => {
-                    if(!tour_stop){
+                    if (!tour_stop) {
                         return res.status(400).json({
-                            message: 'Tour stop not found'
+                            message: 'Tour stop Not Found'
                         });
                     }
-                    return tour_stop
-                        .update({
-                            active: false
-                        })
+                    return tour_stop.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Tour stop unactive'
+                            message: 'Tour stop deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }

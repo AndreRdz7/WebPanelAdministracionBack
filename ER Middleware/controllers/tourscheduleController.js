@@ -67,24 +67,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             tour_schedule.findById(req.params.id)
                 .then(tour_schedule => {
-                    if(!tour_schedule){
+                    if (!tour_schedule) {
                         return res.status(400).json({
-                            message: 'Tour schedule not found'
+                            message: 'Tour schedule Not Found'
                         });
                     }
-                    return tour_schedule
-                        .update({
-                            active: false
-                        })
+                    return tour_schedule.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Tour schedule unactive'
+                            message: 'Tour schedule deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }

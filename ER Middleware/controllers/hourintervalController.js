@@ -69,24 +69,24 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
-        delete: function(req,res){
+        delete: function (req, res) {
             hour_interval.findById(req.params.id)
                 .then(hour_interval => {
-                    if(!hour_interval){
+                    if (!hour_interval) {
                         return res.status(400).json({
-                            message: 'Hour interval not found'
+                            message: 'Hour interval Not Found'
                         });
                     }
-                    return stop
-                        .update({
-                            active: false
-                        })
+                    return hour_interval.destroy()
                         .then(() => res.status(200).json({
-                            message: 'Hour interval unactive'
+                            message: 'Hour interval deleted'
                         }))
                         .catch(err => {
                             res.status(400).json(err);
                         })
+                })
+                .catch(err => {
+                    res.json(err);
                 })
         }
     }
