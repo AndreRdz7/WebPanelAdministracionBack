@@ -8,7 +8,7 @@ module.exports = function(app){
         index: function(req,res){
             place_type.findAll({})
             .then(function(place_type){
-                winston.log('Succes at getting all place type from the BD');
+                winston.log('Succes at getting all place types from the BD');
                 res.status(200).json(place_type);
             })
             .catch(err => {

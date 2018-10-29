@@ -8,7 +8,7 @@ module.exports = function(app){
         index: function(req,res){
             mural.findAll({})
             .then(function(mural){
-                winston.log('Succes at getting all mural from the BD');
+                winston.log('Succes at getting all murals from the BD');
                 res.status(200).json(mural);
             })
             .catch(err => {

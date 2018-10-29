@@ -8,7 +8,7 @@ module.exports = function(app){
         index: function(req,res){
             bracelet.findAll({})
             .then(function(bracelet){
-                winston.log('Succes at getting all bracelet from the BD');
+                winston.log('Succes at getting all bracelets from the BD');
                 res.status(200).json(bracelet);
             })
             .catch(err => {

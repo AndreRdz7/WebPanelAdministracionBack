@@ -88,7 +88,7 @@ module.exports = function(app){
                             active: false
                         })
                         .then(() => res.status(200).json({
-                            message: 'Place image unactive'
+                            message: 'Place unactive'
                         }))
                         .catch(err => {
                             res.status(400).json(err);

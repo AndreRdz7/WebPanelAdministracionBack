@@ -8,7 +8,7 @@ module.exports = function(app){
         index: function(req,res){
             bus.findAll({})
             .then(function(bus){
-                winston.log('Succes at getting all bus from the BD');
+                winston.log('Succes at getting all buses from the BD');
                 res.status(200).json(bus);
             })
             .catch(err => {

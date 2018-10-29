@@ -8,7 +8,7 @@ module.exports = function(app){
         index: function(req,res){
             tour_place.findAll({})
             .then(function(tour_place){
-                winston.log('Succes at getting all tour place from the BD');
+                winston.log('Succes at getting all tour places from the BD');
                 res.status(200).json(tour_place);
             })
             .catch(err => {

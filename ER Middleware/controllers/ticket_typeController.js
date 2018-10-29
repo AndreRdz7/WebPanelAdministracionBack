@@ -8,7 +8,7 @@ module.exports = function(app){
         index: function(req,res){
             ticket_type.findAll({})
             .then(function(ticket_type){
-                winston.log('Succes at getting all ticket type from the BD');
+                winston.log('Succes at getting all ticket types from the BD');
                 res.status(200).json(ticket_type);
             })
             .catch(err => {

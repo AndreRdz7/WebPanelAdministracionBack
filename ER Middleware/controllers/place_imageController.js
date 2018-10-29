@@ -8,7 +8,7 @@ module.exports = function(app){
         index: function(req,res){
             place_image.findAll({})
             .then(function(place_image){
-                winston.log('Succes at getting all place image from the BD');
+                winston.log('Succes at getting all place images from the BD');
                 res.status(200).json(place_image);
             })
             .catch(err => {
