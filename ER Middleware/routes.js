@@ -1,10 +1,9 @@
-const passport = require('passport');
 
 module.exports = function(app){
     let companyController = app.controllers.companyController;
-    let ticket_typeController = app.controllers.ticket_typeController;
+    let ticket_typeController = app.controllers.tickettypeController;
     let muralController = app.controllers.muralController;
-    let place_typeController = app.controllers.place_typeController;
+    let place_typeController = app.controllers.placetypeController;
     let purchaseController = app.controllers.purchaseController;
     let priceController = app.controllers.priceController;
     let userController = app.controllers.userController;
@@ -14,15 +13,15 @@ module.exports = function(app){
     let busController = app.controllers.busController;
     let narrativeController = app.controllers.narrativeController;
     let braceletController = app.controllers.braceletController;
-    let tour_scheduleController = app.controllers.tour_scheduleController;
-    let date_intervalController = app.controllers.date_intervalController;
-    let tour_placeController = app.controllers.tour_placeController;
-    let place_imageController = app. controllers.place_imageController;
-    let activated_atController = app.controllers.activated_atController;
-    let tour_stopController = app.controllers.tour_stopController;
+    let tour_scheduleController = app.controllers.tourscheduleController;
+    let date_intervalController = app.controllers.dateintervalController;
+    let tour_placeController = app.controllers.tourplaceController;
+    let place_imageController = app. controllers.placeimageController;
+    let activated_atController = app.controllers.activatedatController;
+    let tour_stopController = app.controllers.tourstopController;
     let stopController = app.controllers.stopController;
     let scheduleController = app.controllers.scheduleController;
-    let hour_intervalController = app.controllers.hour_intervalController;
+    let hour_intervalController = app.controllers.hourintervalController;
     let imageController = app.controllers.imageController;
     
     
@@ -35,7 +34,7 @@ module.exports = function(app){
         .get(companyController.read)
         .put(companyController.update)
         .delete(companyController.delete);
-
+    
     //Ticket type routes
     app.route('/api/ticket_type')
         .get(ticket_typeController.index)
@@ -44,7 +43,7 @@ module.exports = function(app){
         .get(ticket_typeController.read)
         .put(ticket_typeController.update)
         .delete(ticket_typeController.delete);
-
+    
     //Mural routes
     app.route('/api/mural')
         .get(muralController.index)
@@ -53,7 +52,7 @@ module.exports = function(app){
         .get(muralController.read)
         .put(muralController.update)
         .delete(muralController.delete);
-
+    
     //Place type routes
     app.route('/api/place_type')
         .get(place_typeController.index)
@@ -62,7 +61,7 @@ module.exports = function(app){
         .get(place_typeController.read)
         .put(place_typeController.update)
         .delete(place_typeController.delete);
-
+    
     //Purchase  routes
     app.route('/api/purchase')
         .get(purchaseController.index)
@@ -143,7 +142,7 @@ module.exports = function(app){
         .get(braceletController.read)
         .put(braceletController.update)
         .delete(braceletController.delete);
-
+    
     //Tour schedule routes
     app.route('/api/tour_schedule')
         .get(tour_scheduleController.index)
@@ -152,7 +151,7 @@ module.exports = function(app){
         .get(tour_scheduleController.read)
         .put(tour_scheduleController.update)
         .delete(tour_scheduleController.delete);
-
+    
     //Date interval routes
     app.route('/api/date_interval')
         .get(date_intervalController.index)
@@ -170,7 +169,7 @@ module.exports = function(app){
         .get(tour_placeController.read)
         .put(tour_placeController.update)
         .delete(tour_placeController.delete);
-
+   
     //Place image routes
     app.route('/api/place_image')
         .get(place_imageController.index)
@@ -179,7 +178,7 @@ module.exports = function(app){
         .get(place_imageController.read)
         .put(place_imageController.update)
         .delete(place_imageController.delete);
-
+   
     //Activated at routes
     app.route('/api/activated_at')
         .get(activated_atController.index)
@@ -188,7 +187,7 @@ module.exports = function(app){
         .get(activated_atController.read)
         .put(activated_atController.update)
         .delete(activated_atController.delete);
-
+    
     //Tour stop routes
     app.route('/api/tour_stop')
         .get(tour_stopController.index)
@@ -224,7 +223,7 @@ module.exports = function(app){
         .get(hour_intervalController.read)
         .put(hour_intervalController.update)
         .delete(hour_intervalController.delete);
-
+    
     //Image routes
     app.route('/api/image')
         .get(imageController.index)
