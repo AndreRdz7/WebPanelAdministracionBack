@@ -102,7 +102,7 @@ module.exports = function (app)
         },
 
         delete: function (req, res) {
-            user.findById(req.params.userId)
+            user.findById(req.params.id)
                 .then(user => {
                     if (!user) {
                         return res.status(400).json({
