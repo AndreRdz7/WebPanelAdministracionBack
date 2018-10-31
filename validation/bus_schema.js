@@ -6,6 +6,6 @@ module.exports = {
         mural_id: joi.number().positive().integer().required(),
         capacity: joi.number().integer().required(),
         sold_tickets: joi.number().integer().required(),
-        status: joi.string().valid(in_service,out_of_service).required()
+        status: joi.string().valid('in_service','out_of_service').required()
     })
 }
