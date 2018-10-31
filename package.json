@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha test --reporter mochawesome"
   },
   "author": "Equipo Azul",
   "license": "ISC",
@@ -15,11 +16,15 @@
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
+    "chai": "^4.2.0",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "express-load": "^1.1.16",
+    "joi": "^14.0.0",
     "jsonwebtoken": "^8.2.2",
     "jwt-simple": "^0.5.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.1.0",
     "moment": "^2.22.2",
     "mysql2": "^1.6.1",
     "mysqli": "^3.0.5",
@@ -28,7 +33,9 @@
     "passport-local": "^1.0.0",
     "pg": "^7.4.3",
     "sequelize": "^4.37.10",
-    "sequelize-cli": "^4.0.0"
+    "sequelize-cli": "^4.0.0",
+    "should": "^13.2.3",
+    "supertest": "^3.3.0"
   },
   "devDependencies": {
     "nodemon": "^1.17.5",
