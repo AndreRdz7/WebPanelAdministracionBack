@@ -7,7 +7,7 @@ const joi = require('joi');
 let baseURL = supertest("https://reqres.in");
 let place_type = "/api/place_type";
 
-describe('First Request to Get Companies',()=>{
+describe('First Request to Get Place types',()=>{
     let res;
     it("See Response", async function () {
         res = await baseURL.get(place_type); //Sending the GET request
