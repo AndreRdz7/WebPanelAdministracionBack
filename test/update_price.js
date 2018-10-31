@@ -9,7 +9,7 @@ let price = "/api/price/1";
 
 describe('PUT Request', () => {
     let put_resp;
-    it('makes a POST call ', async () => {
+    it('makes a PUT call ', async () => {
         put_resp = await baseURL.put(price)
             .type('form')
             .send({

@@ -1,19 +1,21 @@
 const supertest = require('supertest');
 const expect = require('chai').expect;
-const schema = require('../validation/ticket_type_schema');
+const schema = require('../validation/tour_schema');
 const joi = require('joi');
 
 
 let baseURL = supertest("https://reqres.in");
-let ticket_type = "/api/ticket_type/1";
+let tour = "/api/tour/1";
 
 describe('PUT Request', () => {
     let put_resp;
     it('makes a PUT call ', async () => {
-        put_resp = await baseURL.put(ticket_type)
+        put_resp = await baseURL.put(tour)
             .type('form')
             .send({
-                "name": "inapam",
+                "name": "Puebla fascinante",
+                "image_path": "src/img.png",
+                "description": "este tour esta padrisimo, deja te explico porque, fijate que te hace un recorrido...jiji"
             })
             .set('Accept', '/application/\json/');
 

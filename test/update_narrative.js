@@ -9,7 +9,7 @@ let narrative = "/api/narrative/3";
 
 describe('PUT Request', () => {
     let put_resp;
-    it('makes a POST call ', async () => {
+    it('makes a PUT call ', async () => {
         put_resp = await baseURL.put(narrative)
             .type('form')
             .send({

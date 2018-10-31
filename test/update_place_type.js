@@ -9,7 +9,7 @@ let place_type = "/api/place_type/1";
 
 describe('PUT Request', () => {
     let put_resp;
-    it('makes a POST call ', async () => {
+    it('makes a PUT call ', async () => {
         put_resp = await baseURL.put(place_type)
             .type('form')
             .send({
