@@ -5,12 +5,12 @@ const joi = require('joi');
 
 
 let baseURL = supertest("https://reqres.in");
-let narrative = "/api/company/1";
+let company = "/api/company/1";
 
 describe('PUT Request', () => {
     let put_resp;
     it('makes a POST call ', async () => {
-        put_resp = await baseURL.put(narrative)
+        put_resp = await baseURL.put(company)
             .type('form')
             .send({
                 "name": "Estrella Verde",

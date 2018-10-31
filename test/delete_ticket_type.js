@@ -1,16 +1,16 @@
 const supertest = require('supertest');
 const expect = require('chai').expect;
-const schema = require('../validation/company_schema');
+const schema = require('../validation/ticket_type_schema');
 const joi = require('joi');
 
 
 let baseURL = supertest("https://reqres.in");
-let company = "/api/company/1";
+let ticket_type = "/api/ticket_type/1";
 
 describe('DELETE Request', () => {
     let del_resp;
     it('makes a delete call ', async () => {
-        del_resp = await baseURL.delete(company);
+        del_resp = await baseURL.delete(ticket_type);
 
         await (console.log(del_resp.body));
     });
