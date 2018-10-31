@@ -13,7 +13,7 @@ describe('PUT Request', () => {
         put_resp = await baseURL.put(user)
             .type('form')
             .send({
-                "user_type": "admin",
+                "user_type": "administrator",
                 "name": "Rayu",
                 "last_name": "Amin",
                 "email": "rayu@er.com",

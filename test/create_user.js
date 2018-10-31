@@ -13,7 +13,7 @@ describe('POST Request',()=>{
         post_resp = await baseURL.post(user)
         .type('form')
         .send({
-                "user_type": "admin",
+                "user_type": "administrator",
                 "name": "Rayu",
                 "last_name": "Amin",
                 "email": "rayu@er.com",

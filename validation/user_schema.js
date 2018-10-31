@@ -3,7 +3,7 @@ const joi = require('joi');
 module.exports = {
     schema : joi.object().keys({
         // enum, falta probar con comillas
-        user_type : joi.string().valid(administrator,client).required(),
+        user_type : joi.string().valid('administrator','client').required(),
         name: joi.string().min(1).required(),
         last_name: joi.string().min(1).required(),
         email: joi.string().email().required(),
