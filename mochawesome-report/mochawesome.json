@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 36,
-    "tests": 72,
-    "passes": 72,
+    "suites": 40,
+    "tests": 80,
+    "passes": 80,
     "pending": 0,
     "failures": 0,
-    "start": "2018-10-31T18:04:36.450Z",
-    "end": "2018-10-31T18:04:45.522Z",
-    "duration": 9072,
-    "testsRegistered": 72,
+    "start": "2018-10-31T18:15:57.620Z",
+    "end": "2018-10-31T18:16:07.182Z",
+    "duration": 9562,
+    "testsRegistered": 80,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "d754f62a-f5d1-44ea-a61e-6528b7adac9a",
+    "uuid": "bd6f9a9a-c43f-455b-a544-beb1d5729c27",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "1b50c44a-c2e3-4642-9fea-7a0f49609b1e",
+        "uuid": "378b180f-cc01-4469-a384-6ded192e8b24",
         "title": "POST Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/create_company.js",
         "file": "/test/create_company.js",
@@ -39,7 +39,7 @@
             "title": "makes a POST call ",
             "fullTitle": "POST Request makes a POST call ",
             "timedOut": false,
-            "duration": 422,
+            "duration": 287,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -48,25 +48,25 @@
             "code": "post_resp = await baseURL.post(company)\n.type('form')\n.send({\n        \"name\": \"Estrella Roja\",\n        \"full_name\": \"Estrella Roja S.A. de C.V.\",\n        \"phone_number\": \"1234545677\",\n        \"street\": \"Calle Calleros\",\n        \"postal_coce\": \"72777\",\n        \"rfc\": \"h23r09hv29h3209hhj\",\n        \"ieps\": \"10\",\n        \"iva\": \".16\",\n        \"latitude\": \"20.348972\",\n        \"longitude\": \"-34.497203984\",\n})\n.set('Accept','/application/\\json/');\nawait (console.log(post_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "522dfaa6-d7d9-4d7e-80c9-bf2af4a0918e",
+            "uuid": "1476b00f-36b9-4d26-a0a0-e4ce283b06e0",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "522dfaa6-d7d9-4d7e-80c9-bf2af4a0918e"
+          "1476b00f-36b9-4d26-a0a0-e4ce283b06e0"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 422,
+        "duration": 287,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "d3c2f99e-6b10-4de9-815d-ad3f81719d7b",
+        "uuid": "57eda258-605d-47c2-91dc-c9f76ebaab47",
         "title": "POST Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/create_narrative.js",
         "file": "/test/create_narrative.js",
@@ -86,14 +86,14 @@
             "code": "post_resp = await baseURL.post(narrative)\n.type('form')\n.send({\n        \"audio_path\": \"src/audio1.mp3\",\n        \"description\": \"abababababababbabababababababbabababababababbababababqbabqbbqbbqbqbabbababababqabababababababab\"\n})\n.set('Accept','/application/\\json/');\nawait (console.log(post_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "26afc5ad-f6b6-4d1a-a5f3-652a9dac8eee",
+            "uuid": "46f9b1a2-9451-4a1c-b754-4f33abdfb001",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "26afc5ad-f6b6-4d1a-a5f3-652a9dac8eee"
+          "46f9b1a2-9451-4a1c-b754-4f33abdfb001"
         ],
         "failures": [],
         "pending": [],
@@ -104,7 +104,7 @@
         "_timeout": 2000
       },
       {
-        "uuid": "9a9e5cd8-8117-449c-8d32-0f669f700d51",
+        "uuid": "dca955f4-6c11-469d-a588-650d39cbe927",
         "title": "POST Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/create_place.js",
         "file": "/test/create_place.js",
@@ -115,7 +115,7 @@
             "title": "makes a POST call ",
             "fullTitle": "POST Request makes a POST call ",
             "timedOut": false,
-            "duration": 301,
+            "duration": 270,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -124,25 +124,25 @@
             "code": "post_resp = await baseURL.post(place)\n.type('form')\n.send({\n        \"place_type_id\": \"1\",\n        \"narrative_id\": \"1\",\n        \"name\": \"catedral\",\n        \"longitude\": \"0\",\n        \"latitude\": \"0\",\n        \"description\": \"la catedral mas pro de mexico\"\n})\n.set('Accept','/application/\\json/');\nawait (console.log(post_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "3291cf5c-1543-4e60-933e-18833d8b4a6c",
+            "uuid": "0c78a777-d066-45fe-8658-bad26652b312",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "3291cf5c-1543-4e60-933e-18833d8b4a6c"
+          "0c78a777-d066-45fe-8658-bad26652b312"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 301,
+        "duration": 270,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "47797905-a8fe-46a7-9cd1-28476856583d",
+        "uuid": "f4a124ef-14aa-48cd-b859-16c61d1889ca",
         "title": "POST Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/create_place_type.js",
         "file": "/test/create_place_type.js",
@@ -153,7 +153,7 @@
             "title": "makes a POST call ",
             "fullTitle": "POST Request makes a POST call ",
             "timedOut": false,
-            "duration": 224,
+            "duration": 269,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -162,25 +162,25 @@
             "code": "post_resp = await baseURL.post(place_type)\n.type('form')\n.send({\n        \"name\": \"recomendacion\"\n})\n.set('Accept','/application/\\json/');\nawait (console.log(post_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "458f8479-47bc-4e7a-a3ec-87e485705e78",
+            "uuid": "4c054c5d-8e24-4264-8b9d-8b58bbdb0809",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "458f8479-47bc-4e7a-a3ec-87e485705e78"
+          "4c054c5d-8e24-4264-8b9d-8b58bbdb0809"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 224,
+        "duration": 269,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "99058b51-2375-4976-8595-8a55812b8d9f",
+        "uuid": "03330b3b-b4f4-4352-aaf8-ff7f0331f5cb",
         "title": "POST Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/create_price.js",
         "file": "/test/create_price.js",
@@ -191,7 +191,7 @@
             "title": "makes a POST call ",
             "fullTitle": "POST Request makes a POST call ",
             "timedOut": false,
-            "duration": 256,
+            "duration": 260,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -200,28 +200,180 @@
             "code": "post_resp = await baseURL.post(price)\n.type('form')\n.send({\n        \"ticket_type_id\": \"1\",\n        \"tour_id\": \"1\",\n        \"amount\": \"10\"\n})\n.set('Accept','/application/\\json/');\nawait (console.log(post_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "3d6ed982-1dfc-4402-9e63-c3c64ca8545c",
+            "uuid": "b0825fd2-5ebc-4b87-aa86-4891c1941a56",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "3d6ed982-1dfc-4402-9e63-c3c64ca8545c"
+          "b0825fd2-5ebc-4b87-aa86-4891c1941a56"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 256,
+        "duration": 260,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "35649ddd-749d-4cd0-917a-f37c4591ed54",
+        "uuid": "c83d6ca4-786f-4d81-82b2-faf0b0c26194",
         "title": "POST Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/create_purchase.js",
         "file": "/test/create_purchase.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "makes a POST call ",
+            "fullTitle": "POST Request makes a POST call ",
+            "timedOut": false,
+            "duration": 253,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "post_resp = await baseURL.post(purchase)\n.type('form')\n.send({\n        \"company_id\": \"1\",\n        \"user_id\": \"1\",\n        \"sub_total\": \"10\",\n        \"total\": \"100\"\n})\n.set('Accept','/application/\\json/');\nawait (console.log(post_resp.body));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "5826df5a-ab7d-40e7-ab0c-bbbfbd9c4599",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "5826df5a-ab7d-40e7-ab0c-bbbfbd9c4599"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 253,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "f4a08085-5a2a-4d68-a431-5556998c7a8f",
+        "title": "POST Request",
+        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/create_ticket.js",
+        "file": "/test/create_ticket.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "makes a POST call ",
+            "fullTitle": "POST Request makes a POST call ",
+            "timedOut": false,
+            "duration": 291,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "post_resp = await baseURL.post(ticket)\n.type('form')\n.send({\n        \"purchase_id\": \"1\",\n        \"price_id\": \"1\",\n        \"client_name\": \"Choko\",\n        \"client_last_name\": \"Man\",\n        \"client_age\": \"10\",\n        \"tour_date\": \"1/12/2018\",\n        \"qr_code\": \"qrcodegen/api/usr=?ea\",\n        \"total\": \"100.0\"\n})\n.set('Accept','/application/\\json/');\nawait (console.log(post_resp.body));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "71e2dfe1-a30a-4e45-b22f-48abe8781d33",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "71e2dfe1-a30a-4e45-b22f-48abe8781d33"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 291,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "ac5c8c3f-dc37-426b-8b08-492902864523",
+        "title": "POST Request",
+        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/create_ticket_type.js",
+        "file": "/test/create_ticket_type.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "makes a POST call ",
+            "fullTitle": "POST Request makes a POST call ",
+            "timedOut": false,
+            "duration": 229,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "post_resp = await baseURL.post(ticket_type)\n.type('form')\n.send({\n        \"name\": \"adulto\"\n})\n.set('Accept','/application/\\json/');\nawait (console.log(post_resp.body));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "a7aa0388-0d3d-48f1-8198-47d2430273f3",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "a7aa0388-0d3d-48f1-8198-47d2430273f3"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 229,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "b15c652c-c403-47c8-914c-2bc6ac43fddb",
+        "title": "POST Request",
+        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/create_tour.js",
+        "file": "/test/create_tour.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "makes a POST call ",
+            "fullTitle": "POST Request makes a POST call ",
+            "timedOut": false,
+            "duration": 265,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "post_resp = await baseURL.post(tour)\n.type('form')\n.send({\n        \"name\": \"Puebla fascinante\",\n        \"image_path\": \"src/img.png\",\n        \"description\": \"este tour esta padrisimo, deja te explico porque, fijate que te hace un recorrido...\"\n})\n.set('Accept','/application/\\json/');\nawait (console.log(post_resp.body));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "79175961-25e1-4a19-8e2d-e84db2f51330",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "79175961-25e1-4a19-8e2d-e84db2f51330"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 265,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "1bc90f9f-5210-4a23-a4a6-efdac7043193",
+        "title": "POST Request",
+        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/create_user.js",
+        "file": "/test/create_user.js",
         "beforeHooks": [],
         "afterHooks": [],
         "tests": [
@@ -235,17 +387,17 @@
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "post_resp = await baseURL.post(purchase)\n.type('form')\n.send({\n        \"company_id\": \"1\",\n        \"user_id\": \"1\",\n        \"sub_total\": \"10\",\n        \"total\": \"100\"\n})\n.set('Accept','/application/\\json/');\nawait (console.log(post_resp.body));",
+            "code": "post_resp = await baseURL.post(user)\n.type('form')\n.send({\n        \"user_type\": \"admin\",\n        \"name\": \"Rayu\",\n        \"last_name\": \"Amin\",\n        \"email\": \"rayu@er.com\",\n        \"birthdate\": \"1/1/1980\",\n        \"password\": \"bimbo\",\n        \"postal_code\": \"77777\",\n        \"phone_number\": \"2222121212\"\n})\n.set('Accept','/application/\\json/');\nawait (console.log(post_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "a30e6666-86a1-411f-b184-01cd67346a97",
+            "uuid": "635b8060-0304-46d9-9c8e-6f6d9d42a0d3",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "a30e6666-86a1-411f-b184-01cd67346a97"
+          "635b8060-0304-46d9-9c8e-6f6d9d42a0d3"
         ],
         "failures": [],
         "pending": [],
@@ -256,121 +408,7 @@
         "_timeout": 2000
       },
       {
-        "uuid": "05c30736-6259-4acb-9030-260de6ab5d56",
-        "title": "POST Request",
-        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/create_ticket.js",
-        "file": "/test/create_ticket.js",
-        "beforeHooks": [],
-        "afterHooks": [],
-        "tests": [
-          {
-            "title": "makes a POST call ",
-            "fullTitle": "POST Request makes a POST call ",
-            "timedOut": false,
-            "duration": 262,
-            "state": "passed",
-            "speed": "slow",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "post_resp = await baseURL.post(ticket)\n.type('form')\n.send({\n        \"purchase_id\": \"1\",\n        \"price_id\": \"1\",\n        \"client_name\": \"Choko\",\n        \"client_last_name\": \"Man\",\n        \"client_age\": \"10\",\n        \"tour_date\": \"1/12/2018\",\n        \"qr_code\": \"qrcodegen/api/usr=?ea\",\n        \"total\": \"100.0\"\n})\n.set('Accept','/application/\\json/');\nawait (console.log(post_resp.body));",
-            "err": {},
-            "isRoot": false,
-            "uuid": "1e628fba-8187-418c-8b15-40249d2fd493",
-            "isHook": false,
-            "skipped": false
-          }
-        ],
-        "suites": [],
-        "passes": [
-          "1e628fba-8187-418c-8b15-40249d2fd493"
-        ],
-        "failures": [],
-        "pending": [],
-        "skipped": [],
-        "duration": 262,
-        "root": false,
-        "rootEmpty": false,
-        "_timeout": 2000
-      },
-      {
-        "uuid": "236020f2-1021-404e-b847-be7782ff7fe4",
-        "title": "POST Request",
-        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/create_ticket_type.js",
-        "file": "/test/create_ticket_type.js",
-        "beforeHooks": [],
-        "afterHooks": [],
-        "tests": [
-          {
-            "title": "makes a POST call ",
-            "fullTitle": "POST Request makes a POST call ",
-            "timedOut": false,
-            "duration": 247,
-            "state": "passed",
-            "speed": "slow",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "post_resp = await baseURL.post(ticket_type)\n.type('form')\n.send({\n        \"name\": \"adulto\"\n})\n.set('Accept','/application/\\json/');\nawait (console.log(post_resp.body));",
-            "err": {},
-            "isRoot": false,
-            "uuid": "f3e4d916-4725-4c21-b69d-ef56b2ac440b",
-            "isHook": false,
-            "skipped": false
-          }
-        ],
-        "suites": [],
-        "passes": [
-          "f3e4d916-4725-4c21-b69d-ef56b2ac440b"
-        ],
-        "failures": [],
-        "pending": [],
-        "skipped": [],
-        "duration": 247,
-        "root": false,
-        "rootEmpty": false,
-        "_timeout": 2000
-      },
-      {
-        "uuid": "6951d8c7-4f5a-4269-9140-991228e30261",
-        "title": "POST Request",
-        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/create_user.js",
-        "file": "/test/create_user.js",
-        "beforeHooks": [],
-        "afterHooks": [],
-        "tests": [
-          {
-            "title": "makes a POST call ",
-            "fullTitle": "POST Request makes a POST call ",
-            "timedOut": false,
-            "duration": 247,
-            "state": "passed",
-            "speed": "slow",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "post_resp = await baseURL.post(user)\n.type('form')\n.send({\n        \"user_type\": \"administrator\",\n        \"name\": \"Rayu\",\n        \"last_name\": \"Amin\",\n        \"email\": \"rayu@er.com\",\n        \"birthdate\": \"1/1/1980\",\n        \"password\": \"bimbo\",\n        \"postal_code\": \"77777\",\n        \"phone_number\": \"2222121212\"\n})\n.set('Accept','/application/\\json/');\nawait (console.log(post_resp.body));",
-            "err": {},
-            "isRoot": false,
-            "uuid": "a62eac0a-29fc-496b-81ea-cb5a3d7be281",
-            "isHook": false,
-            "skipped": false
-          }
-        ],
-        "suites": [],
-        "passes": [
-          "a62eac0a-29fc-496b-81ea-cb5a3d7be281"
-        ],
-        "failures": [],
-        "pending": [],
-        "skipped": [],
-        "duration": 247,
-        "root": false,
-        "rootEmpty": false,
-        "_timeout": 2000
-      },
-      {
-        "uuid": "77920184-3e40-48b6-8793-1e20826973a1",
+        "uuid": "e0c52e19-59bb-4f53-8fcb-09ddb8dae810",
         "title": "DELETE Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_company.js",
         "file": "/test/delete_company.js",
@@ -381,7 +419,7 @@
             "title": "makes a delete call ",
             "fullTitle": "DELETE Request makes a delete call ",
             "timedOut": false,
-            "duration": 281,
+            "duration": 247,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -390,7 +428,7 @@
             "code": "del_resp = await baseURL.delete(company);\nawait (console.log(del_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "694193c6-d246-41fa-8ce4-065a277b5c45",
+            "uuid": "650001d2-4868-4861-9bb3-f6eb9a681d43",
             "isHook": false,
             "skipped": false
           },
@@ -398,7 +436,7 @@
             "title": "asserts that the response code is 204",
             "fullTitle": "DELETE Request asserts that the response code is 204",
             "timedOut": false,
-            "duration": 2,
+            "duration": 1,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -407,26 +445,26 @@
             "code": "await (expect(del_resp.status).to.eql(204));",
             "err": {},
             "isRoot": false,
-            "uuid": "bb605131-d3df-4057-ac63-923ba0b70e14",
+            "uuid": "45cc9f4b-2949-4d85-ae98-c88d3823b1eb",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "694193c6-d246-41fa-8ce4-065a277b5c45",
-          "bb605131-d3df-4057-ac63-923ba0b70e14"
+          "650001d2-4868-4861-9bb3-f6eb9a681d43",
+          "45cc9f4b-2949-4d85-ae98-c88d3823b1eb"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 283,
+        "duration": 248,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "bc6f1035-115a-4ef9-a3e7-17430f089269",
+        "uuid": "3179538d-09e2-43b4-9a2b-14746d5bc6a8",
         "title": "DELETE Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_narrative.js",
         "file": "/test/delete_narrative.js",
@@ -437,7 +475,7 @@
             "title": "makes a delete call ",
             "fullTitle": "DELETE Request makes a delete call ",
             "timedOut": false,
-            "duration": 262,
+            "duration": 245,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -446,7 +484,7 @@
             "code": "del_resp = await baseURL.delete(narrative);\nawait (console.log(del_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "ef3df167-6b2f-4888-9f0c-25d786f66003",
+            "uuid": "28ce87e9-e298-40b4-bf4c-aa618bffbbc0",
             "isHook": false,
             "skipped": false
           },
@@ -454,7 +492,7 @@
             "title": "asserts that the response code is 204",
             "fullTitle": "DELETE Request asserts that the response code is 204",
             "timedOut": false,
-            "duration": 0,
+            "duration": 1,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -463,127 +501,15 @@
             "code": "await (expect(del_resp.status).to.eql(204));",
             "err": {},
             "isRoot": false,
-            "uuid": "e786d579-bad6-4361-ae33-1da3f2e93a9f",
+            "uuid": "1020ee26-cfa8-404f-bd6b-edffa959f662",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "ef3df167-6b2f-4888-9f0c-25d786f66003",
-          "e786d579-bad6-4361-ae33-1da3f2e93a9f"
-        ],
-        "failures": [],
-        "pending": [],
-        "skipped": [],
-        "duration": 262,
-        "root": false,
-        "rootEmpty": false,
-        "_timeout": 2000
-      },
-      {
-        "uuid": "4c29585c-5518-4e80-a4ed-720497c79062",
-        "title": "DELETE Request",
-        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_place.js",
-        "file": "/test/delete_place.js",
-        "beforeHooks": [],
-        "afterHooks": [],
-        "tests": [
-          {
-            "title": "makes a delete call ",
-            "fullTitle": "DELETE Request makes a delete call ",
-            "timedOut": false,
-            "duration": 206,
-            "state": "passed",
-            "speed": "slow",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "del_resp = await baseURL.delete(place);\nawait (console.log(del_resp.body));",
-            "err": {},
-            "isRoot": false,
-            "uuid": "c3a345e2-c7d3-4227-b65e-3a4d19ef636b",
-            "isHook": false,
-            "skipped": false
-          },
-          {
-            "title": "asserts that the response code is 204",
-            "fullTitle": "DELETE Request asserts that the response code is 204",
-            "timedOut": false,
-            "duration": 0,
-            "state": "passed",
-            "speed": "fast",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "await (expect(del_resp.status).to.eql(204));",
-            "err": {},
-            "isRoot": false,
-            "uuid": "cbbdd5d3-38f2-4f36-8e28-4397f8092ee5",
-            "isHook": false,
-            "skipped": false
-          }
-        ],
-        "suites": [],
-        "passes": [
-          "c3a345e2-c7d3-4227-b65e-3a4d19ef636b",
-          "cbbdd5d3-38f2-4f36-8e28-4397f8092ee5"
-        ],
-        "failures": [],
-        "pending": [],
-        "skipped": [],
-        "duration": 206,
-        "root": false,
-        "rootEmpty": false,
-        "_timeout": 2000
-      },
-      {
-        "uuid": "3a6126c0-8938-4cf4-bc87-27adc9d6ce52",
-        "title": "DELETE Request",
-        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_place_type.js",
-        "file": "/test/delete_place_type.js",
-        "beforeHooks": [],
-        "afterHooks": [],
-        "tests": [
-          {
-            "title": "makes a delete call ",
-            "fullTitle": "DELETE Request makes a delete call ",
-            "timedOut": false,
-            "duration": 246,
-            "state": "passed",
-            "speed": "slow",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "del_resp = await baseURL.delete(place_type);\nawait (console.log(del_resp.body));",
-            "err": {},
-            "isRoot": false,
-            "uuid": "0e45829e-0c32-446f-bb0b-a1b3e9eb9f31",
-            "isHook": false,
-            "skipped": false
-          },
-          {
-            "title": "asserts that the response code is 204",
-            "fullTitle": "DELETE Request asserts that the response code is 204",
-            "timedOut": false,
-            "duration": 0,
-            "state": "passed",
-            "speed": "fast",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "await (expect(del_resp.status).to.eql(204));",
-            "err": {},
-            "isRoot": false,
-            "uuid": "b791e30e-46d7-4029-a1ca-cc4f80c9b097",
-            "isHook": false,
-            "skipped": false
-          }
-        ],
-        "suites": [],
-        "passes": [
-          "0e45829e-0c32-446f-bb0b-a1b3e9eb9f31",
-          "b791e30e-46d7-4029-a1ca-cc4f80c9b097"
+          "28ce87e9-e298-40b4-bf4c-aa618bffbbc0",
+          "1020ee26-cfa8-404f-bd6b-edffa959f662"
         ],
         "failures": [],
         "pending": [],
@@ -594,178 +520,10 @@
         "_timeout": 2000
       },
       {
-        "uuid": "878e660f-f8f3-4b08-98b5-491a6128e122",
+        "uuid": "de7ed65b-a781-415e-af15-0b3efd27a0fd",
         "title": "DELETE Request",
-        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_price.js",
-        "file": "/test/delete_price.js",
-        "beforeHooks": [],
-        "afterHooks": [],
-        "tests": [
-          {
-            "title": "makes a delete call ",
-            "fullTitle": "DELETE Request makes a delete call ",
-            "timedOut": false,
-            "duration": 263,
-            "state": "passed",
-            "speed": "slow",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "del_resp = await baseURL.delete(price);\nawait (console.log(del_resp.body));",
-            "err": {},
-            "isRoot": false,
-            "uuid": "aa6461dd-ba8d-4d68-a869-996acdf1606d",
-            "isHook": false,
-            "skipped": false
-          },
-          {
-            "title": "asserts that the response code is 204",
-            "fullTitle": "DELETE Request asserts that the response code is 204",
-            "timedOut": false,
-            "duration": 1,
-            "state": "passed",
-            "speed": "fast",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "await (expect(del_resp.status).to.eql(204));",
-            "err": {},
-            "isRoot": false,
-            "uuid": "fb407ec2-9ad4-4b47-a50f-f072a7e7c6ef",
-            "isHook": false,
-            "skipped": false
-          }
-        ],
-        "suites": [],
-        "passes": [
-          "aa6461dd-ba8d-4d68-a869-996acdf1606d",
-          "fb407ec2-9ad4-4b47-a50f-f072a7e7c6ef"
-        ],
-        "failures": [],
-        "pending": [],
-        "skipped": [],
-        "duration": 264,
-        "root": false,
-        "rootEmpty": false,
-        "_timeout": 2000
-      },
-      {
-        "uuid": "013f4b59-1600-4b4f-b10f-dce84fca684a",
-        "title": "DELETE Request",
-        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_purchase.js",
-        "file": "/test/delete_purchase.js",
-        "beforeHooks": [],
-        "afterHooks": [],
-        "tests": [
-          {
-            "title": "makes a delete call ",
-            "fullTitle": "DELETE Request makes a delete call ",
-            "timedOut": false,
-            "duration": 293,
-            "state": "passed",
-            "speed": "slow",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "del_resp = await baseURL.delete(purchase);\nawait (console.log(del_resp.body));",
-            "err": {},
-            "isRoot": false,
-            "uuid": "81d9f8b6-b0ba-4679-ad18-cda135bcb031",
-            "isHook": false,
-            "skipped": false
-          },
-          {
-            "title": "asserts that the response code is 204",
-            "fullTitle": "DELETE Request asserts that the response code is 204",
-            "timedOut": false,
-            "duration": 0,
-            "state": "passed",
-            "speed": "fast",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "await (expect(del_resp.status).to.eql(204));",
-            "err": {},
-            "isRoot": false,
-            "uuid": "b5853bea-e5d9-4774-9edd-a4156b135af6",
-            "isHook": false,
-            "skipped": false
-          }
-        ],
-        "suites": [],
-        "passes": [
-          "81d9f8b6-b0ba-4679-ad18-cda135bcb031",
-          "b5853bea-e5d9-4774-9edd-a4156b135af6"
-        ],
-        "failures": [],
-        "pending": [],
-        "skipped": [],
-        "duration": 293,
-        "root": false,
-        "rootEmpty": false,
-        "_timeout": 2000
-      },
-      {
-        "uuid": "46f17e63-de4e-41a3-927c-17bd4dd8c2cb",
-        "title": "DELETE Request",
-        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_ticket.js",
-        "file": "/test/delete_ticket.js",
-        "beforeHooks": [],
-        "afterHooks": [],
-        "tests": [
-          {
-            "title": "makes a delete call ",
-            "fullTitle": "DELETE Request makes a delete call ",
-            "timedOut": false,
-            "duration": 263,
-            "state": "passed",
-            "speed": "slow",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "del_resp = await baseURL.delete(ticket);\nawait (console.log(del_resp.body));",
-            "err": {},
-            "isRoot": false,
-            "uuid": "68c9f497-1851-4216-86ed-8c93da589d68",
-            "isHook": false,
-            "skipped": false
-          },
-          {
-            "title": "asserts that the response code is 204",
-            "fullTitle": "DELETE Request asserts that the response code is 204",
-            "timedOut": false,
-            "duration": 1,
-            "state": "passed",
-            "speed": "fast",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "await (expect(del_resp.status).to.eql(204));",
-            "err": {},
-            "isRoot": false,
-            "uuid": "1ff1fc08-9665-4f1d-aa82-b3b08fe83972",
-            "isHook": false,
-            "skipped": false
-          }
-        ],
-        "suites": [],
-        "passes": [
-          "68c9f497-1851-4216-86ed-8c93da589d68",
-          "1ff1fc08-9665-4f1d-aa82-b3b08fe83972"
-        ],
-        "failures": [],
-        "pending": [],
-        "skipped": [],
-        "duration": 264,
-        "root": false,
-        "rootEmpty": false,
-        "_timeout": 2000
-      },
-      {
-        "uuid": "bd186729-776b-4e61-8a76-1ef32fb9195d",
-        "title": "DELETE Request",
-        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_ticket_type.js",
-        "file": "/test/delete_ticket_type.js",
+        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_place.js",
+        "file": "/test/delete_place.js",
         "beforeHooks": [],
         "afterHooks": [],
         "tests": [
@@ -779,66 +537,10 @@
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "del_resp = await baseURL.delete(ticket_type);\nawait (console.log(del_resp.body));",
+            "code": "del_resp = await baseURL.delete(place);\nawait (console.log(del_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "a2f59f62-7120-4222-9a2a-c11a01fc50db",
-            "isHook": false,
-            "skipped": false
-          },
-          {
-            "title": "asserts that the response code is 204",
-            "fullTitle": "DELETE Request asserts that the response code is 204",
-            "timedOut": false,
-            "duration": 1,
-            "state": "passed",
-            "speed": "fast",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "await (expect(del_resp.status).to.eql(204));",
-            "err": {},
-            "isRoot": false,
-            "uuid": "ad1248fd-ed80-48ef-9e07-5795e51616e5",
-            "isHook": false,
-            "skipped": false
-          }
-        ],
-        "suites": [],
-        "passes": [
-          "a2f59f62-7120-4222-9a2a-c11a01fc50db",
-          "ad1248fd-ed80-48ef-9e07-5795e51616e5"
-        ],
-        "failures": [],
-        "pending": [],
-        "skipped": [],
-        "duration": 245,
-        "root": false,
-        "rootEmpty": false,
-        "_timeout": 2000
-      },
-      {
-        "uuid": "82db9270-c6e5-4cdc-b050-4a404802eaf3",
-        "title": "DELETE Request",
-        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_user.js",
-        "file": "/test/delete_user.js",
-        "beforeHooks": [],
-        "afterHooks": [],
-        "tests": [
-          {
-            "title": "makes a delete call ",
-            "fullTitle": "DELETE Request makes a delete call ",
-            "timedOut": false,
-            "duration": 294,
-            "state": "passed",
-            "speed": "slow",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "del_resp = await baseURL.delete(user);\nawait (console.log(del_resp.body));",
-            "err": {},
-            "isRoot": false,
-            "uuid": "922b2cf4-e884-4d15-bfd4-4f1a73e09fbe",
+            "uuid": "d8899b7e-6c50-4b33-826e-12750aa64bc3",
             "isHook": false,
             "skipped": false
           },
@@ -855,26 +557,418 @@
             "code": "await (expect(del_resp.status).to.eql(204));",
             "err": {},
             "isRoot": false,
-            "uuid": "21196e98-b6d8-4552-afc4-0235b7da9505",
+            "uuid": "f10d0605-8158-4d69-a0ab-d332955228de",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "922b2cf4-e884-4d15-bfd4-4f1a73e09fbe",
-          "21196e98-b6d8-4552-afc4-0235b7da9505"
+          "d8899b7e-6c50-4b33-826e-12750aa64bc3",
+          "f10d0605-8158-4d69-a0ab-d332955228de"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 294,
+        "duration": 244,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "2b3d6cd6-9f25-4eb4-9517-ad961018f781",
+        "uuid": "e629bb74-2509-4e42-86d9-85d9dc4955d9",
+        "title": "DELETE Request",
+        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_place_type.js",
+        "file": "/test/delete_place_type.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "makes a delete call ",
+            "fullTitle": "DELETE Request makes a delete call ",
+            "timedOut": false,
+            "duration": 245,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "del_resp = await baseURL.delete(place_type);\nawait (console.log(del_resp.body));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "58a5e47c-6384-4d58-a3fc-6396577a0738",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "asserts that the response code is 204",
+            "fullTitle": "DELETE Request asserts that the response code is 204",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "await (expect(del_resp.status).to.eql(204));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "09360c0f-660a-473e-9613-b0101e4bf32c",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "58a5e47c-6384-4d58-a3fc-6396577a0738",
+          "09360c0f-660a-473e-9613-b0101e4bf32c"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 245,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "2cf4b490-35e0-4725-a877-8ecd2d20b39d",
+        "title": "DELETE Request",
+        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_price.js",
+        "file": "/test/delete_price.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "makes a delete call ",
+            "fullTitle": "DELETE Request makes a delete call ",
+            "timedOut": false,
+            "duration": 243,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "del_resp = await baseURL.delete(price);\nawait (console.log(del_resp.body));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "9f50c4de-03fd-4731-9a1d-84483d89d896",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "asserts that the response code is 204",
+            "fullTitle": "DELETE Request asserts that the response code is 204",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "await (expect(del_resp.status).to.eql(204));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "5e9184af-8e7d-46fe-9415-812c58feb009",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "9f50c4de-03fd-4731-9a1d-84483d89d896",
+          "5e9184af-8e7d-46fe-9415-812c58feb009"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 243,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "b71a4456-b12e-42bd-a671-7105783a7818",
+        "title": "DELETE Request",
+        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_purchase.js",
+        "file": "/test/delete_purchase.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "makes a delete call ",
+            "fullTitle": "DELETE Request makes a delete call ",
+            "timedOut": false,
+            "duration": 245,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "del_resp = await baseURL.delete(purchase);\nawait (console.log(del_resp.body));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "a55f4252-a0c5-40a3-9c91-336fd0624785",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "asserts that the response code is 204",
+            "fullTitle": "DELETE Request asserts that the response code is 204",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "await (expect(del_resp.status).to.eql(204));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "e942aac6-697b-442c-9497-ad442de5d49b",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "a55f4252-a0c5-40a3-9c91-336fd0624785",
+          "e942aac6-697b-442c-9497-ad442de5d49b"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 245,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "142a4b2d-92e8-4220-b648-d4be12a3cc91",
+        "title": "DELETE Request",
+        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_ticket.js",
+        "file": "/test/delete_ticket.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "makes a delete call ",
+            "fullTitle": "DELETE Request makes a delete call ",
+            "timedOut": false,
+            "duration": 239,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "del_resp = await baseURL.delete(ticket);\nawait (console.log(del_resp.body));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "402293de-efe9-4643-961c-5a467b3cd2e1",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "asserts that the response code is 204",
+            "fullTitle": "DELETE Request asserts that the response code is 204",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "await (expect(del_resp.status).to.eql(204));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "60e87766-3f77-4b9d-9bff-4089590935e6",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "402293de-efe9-4643-961c-5a467b3cd2e1",
+          "60e87766-3f77-4b9d-9bff-4089590935e6"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 239,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "7c6d83c1-5746-4868-b26f-2b1e190bce87",
+        "title": "DELETE Request",
+        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_ticket_type.js",
+        "file": "/test/delete_ticket_type.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "makes a delete call ",
+            "fullTitle": "DELETE Request makes a delete call ",
+            "timedOut": false,
+            "duration": 204,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "del_resp = await baseURL.delete(ticket_type);\nawait (console.log(del_resp.body));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "76448649-6435-4902-963c-30eb0a83164b",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "asserts that the response code is 204",
+            "fullTitle": "DELETE Request asserts that the response code is 204",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "await (expect(del_resp.status).to.eql(204));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "c8513c98-7f4e-4ab1-9f02-c6d0342ea167",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "76448649-6435-4902-963c-30eb0a83164b",
+          "c8513c98-7f4e-4ab1-9f02-c6d0342ea167"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 204,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "0244b46a-7957-4753-95b6-dab0afae5fa9",
+        "title": "DELETE Request",
+        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_tour.js",
+        "file": "/test/delete_tour.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "makes a delete call ",
+            "fullTitle": "DELETE Request makes a delete call ",
+            "timedOut": false,
+            "duration": 202,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "del_resp = await baseURL.delete(tour);\nawait (console.log(del_resp.body));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "df75d8ef-c875-49de-8e77-627a2ab68e5d",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "asserts that the response code is 204",
+            "fullTitle": "DELETE Request asserts that the response code is 204",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "await (expect(del_resp.status).to.eql(204));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "8a28227b-72cd-4f5a-9302-47d99e9c2d9d",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "df75d8ef-c875-49de-8e77-627a2ab68e5d",
+          "8a28227b-72cd-4f5a-9302-47d99e9c2d9d"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 202,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "6b35a8c6-22da-462d-a101-b4cc86b73534",
+        "title": "DELETE Request",
+        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/delete_user.js",
+        "file": "/test/delete_user.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "makes a delete call ",
+            "fullTitle": "DELETE Request makes a delete call ",
+            "timedOut": false,
+            "duration": 247,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "del_resp = await baseURL.delete(user);\nawait (console.log(del_resp.body));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "86cc245e-a2f9-46a2-8895-c01cb7274217",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "asserts that the response code is 204",
+            "fullTitle": "DELETE Request asserts that the response code is 204",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "await (expect(del_resp.status).to.eql(204));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "63cae922-2c02-4821-801a-b841b9bc71d7",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "86cc245e-a2f9-46a2-8895-c01cb7274217",
+          "63cae922-2c02-4821-801a-b841b9bc71d7"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 247,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "689c1826-d312-4d8a-a27f-7d417754b936",
         "title": "First Request to Get Companies",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/read_company.js",
         "file": "/test/read_company.js",
@@ -885,7 +979,7 @@
             "title": "See Response",
             "fullTitle": "First Request to Get Companies See Response",
             "timedOut": false,
-            "duration": 207,
+            "duration": 211,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -894,7 +988,7 @@
             "code": "res = await baseURL.get(company); //Sending the GET request\nconsole.log(res.body);",
             "err": {},
             "isRoot": false,
-            "uuid": "5922c0bc-28fb-48fb-aef3-f684a6b642e4",
+            "uuid": "c5aa26a0-6be9-4a01-a837-10af27f06f8f",
             "isHook": false,
             "skipped": false
           },
@@ -911,7 +1005,7 @@
             "code": "await (expect(res.status).to.equal(200));",
             "err": {},
             "isRoot": false,
-            "uuid": "2c4c316d-aa53-4eab-9440-7b2886498274",
+            "uuid": "cf0466bd-2df6-45b3-901c-b353e5ec793e",
             "isHook": false,
             "skipped": false
           },
@@ -928,7 +1022,7 @@
             "code": "await (console.log(res.body.data.length));",
             "err": {},
             "isRoot": false,
-            "uuid": "e7864db3-8cf9-4f1a-b207-48c6b8f1957a",
+            "uuid": "55b45707-2b77-46ef-8649-8c5fac96e0c3",
             "isHook": false,
             "skipped": false
           },
@@ -945,28 +1039,28 @@
             "code": "for(let i=0;i<res.body.data.length;i++){\n   await(console.log(res.body.data[i].id));\n}",
             "err": {},
             "isRoot": false,
-            "uuid": "b1a16722-aeea-43a8-922e-d1b271fe9020",
+            "uuid": "2cb33b54-c3d4-4889-b8e7-dd0fc822392b",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "5922c0bc-28fb-48fb-aef3-f684a6b642e4",
-          "2c4c316d-aa53-4eab-9440-7b2886498274",
-          "e7864db3-8cf9-4f1a-b207-48c6b8f1957a",
-          "b1a16722-aeea-43a8-922e-d1b271fe9020"
+          "c5aa26a0-6be9-4a01-a837-10af27f06f8f",
+          "cf0466bd-2df6-45b3-901c-b353e5ec793e",
+          "55b45707-2b77-46ef-8649-8c5fac96e0c3",
+          "2cb33b54-c3d4-4889-b8e7-dd0fc822392b"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 208,
+        "duration": 212,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "08642684-9955-409a-970d-72f372f1690f",
+        "uuid": "1db22295-a75f-40c3-9392-bb2d853f9077",
         "title": "First Request to Get Narratives",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/read_narrative.js",
         "file": "/test/read_narrative.js",
@@ -977,7 +1071,7 @@
             "title": "See Response",
             "fullTitle": "First Request to Get Narratives See Response",
             "timedOut": false,
-            "duration": 271,
+            "duration": 202,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -986,7 +1080,7 @@
             "code": "res = await baseURL.get(narrative); //Sending the GET request\nconsole.log(res.body);",
             "err": {},
             "isRoot": false,
-            "uuid": "199a6ba5-4e3e-4e58-8bbd-ef088b213804",
+            "uuid": "c72ffa46-2fd5-4365-a73d-f1c1e9eea742",
             "isHook": false,
             "skipped": false
           },
@@ -1003,7 +1097,7 @@
             "code": "await (expect(res.status).to.equal(200));",
             "err": {},
             "isRoot": false,
-            "uuid": "59457138-4478-4ee8-8ff2-0b3461b37581",
+            "uuid": "09590165-2a26-49f0-806b-e1b906fdcce0",
             "isHook": false,
             "skipped": false
           },
@@ -1020,7 +1114,7 @@
             "code": "await (console.log(res.body.data.length));",
             "err": {},
             "isRoot": false,
-            "uuid": "bb4f2a2d-f79e-49da-bc29-34b21208df04",
+            "uuid": "9bdb7cb3-2a20-4672-b805-f8192486fad4",
             "isHook": false,
             "skipped": false
           },
@@ -1028,7 +1122,7 @@
             "title": "gets the id from the array",
             "fullTitle": "First Request to Get Narratives gets the id from the array",
             "timedOut": false,
-            "duration": 1,
+            "duration": 0,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -1037,28 +1131,28 @@
             "code": "for(let i=0;i<res.body.data.length;i++){\n   await(console.log(res.body.data[i].id));\n}",
             "err": {},
             "isRoot": false,
-            "uuid": "8a6c71e0-5089-4e6c-b5a4-1d88b735f383",
+            "uuid": "90bccc4c-04d5-460c-af0c-6c433a0b5a61",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "199a6ba5-4e3e-4e58-8bbd-ef088b213804",
-          "59457138-4478-4ee8-8ff2-0b3461b37581",
-          "bb4f2a2d-f79e-49da-bc29-34b21208df04",
-          "8a6c71e0-5089-4e6c-b5a4-1d88b735f383"
+          "c72ffa46-2fd5-4365-a73d-f1c1e9eea742",
+          "09590165-2a26-49f0-806b-e1b906fdcce0",
+          "9bdb7cb3-2a20-4672-b805-f8192486fad4",
+          "90bccc4c-04d5-460c-af0c-6c433a0b5a61"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 272,
+        "duration": 202,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "e6c30e00-814d-417a-8980-4d49496ef9ce",
+        "uuid": "c984454d-b62d-4232-b0b4-11dd41f2d054",
         "title": "First Request to Get Places",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/read_place.js",
         "file": "/test/read_place.js",
@@ -1069,7 +1163,7 @@
             "title": "See Response",
             "fullTitle": "First Request to Get Places See Response",
             "timedOut": false,
-            "duration": 252,
+            "duration": 201,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -1078,7 +1172,7 @@
             "code": "res = await baseURL.get(place); //Sending the GET request\nconsole.log(res.body);",
             "err": {},
             "isRoot": false,
-            "uuid": "e875e4ec-b461-4e9f-bd49-bbcb1c81f5a4",
+            "uuid": "8baf2b70-b20c-4ac8-a965-0af7498d136b",
             "isHook": false,
             "skipped": false
           },
@@ -1095,7 +1189,7 @@
             "code": "await (expect(res.status).to.equal(200));",
             "err": {},
             "isRoot": false,
-            "uuid": "4e1216e6-ab9b-4019-b7dc-35cd599b134f",
+            "uuid": "325c398a-efc5-4eff-b337-ff25868afe99",
             "isHook": false,
             "skipped": false
           },
@@ -1103,7 +1197,7 @@
             "title": "prints length of data array",
             "fullTitle": "First Request to Get Places prints length of data array",
             "timedOut": false,
-            "duration": 0,
+            "duration": 1,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -1112,7 +1206,7 @@
             "code": "await (console.log(res.body.data.length));",
             "err": {},
             "isRoot": false,
-            "uuid": "3b3c85c6-3602-465c-b382-e43278699f19",
+            "uuid": "b5f1c564-5ccd-4e82-a7c4-92778d9589f5",
             "isHook": false,
             "skipped": false
           },
@@ -1129,28 +1223,28 @@
             "code": "for(let i=0;i<res.body.data.length;i++){\n   await(console.log(res.body.data[i].id));\n}",
             "err": {},
             "isRoot": false,
-            "uuid": "522ed374-a450-46b1-ab83-5c516c022841",
+            "uuid": "c8235e74-54a1-4946-9c08-9b8ec7013be3",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "e875e4ec-b461-4e9f-bd49-bbcb1c81f5a4",
-          "4e1216e6-ab9b-4019-b7dc-35cd599b134f",
-          "3b3c85c6-3602-465c-b382-e43278699f19",
-          "522ed374-a450-46b1-ab83-5c516c022841"
+          "8baf2b70-b20c-4ac8-a965-0af7498d136b",
+          "325c398a-efc5-4eff-b337-ff25868afe99",
+          "b5f1c564-5ccd-4e82-a7c4-92778d9589f5",
+          "c8235e74-54a1-4946-9c08-9b8ec7013be3"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 252,
+        "duration": 202,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "391fb9ec-ed01-497e-b5b8-902040823a96",
+        "uuid": "f0bcd029-8379-4db7-9f9a-0b95bf62590c",
         "title": "First Request to Get Place types",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/read_place_type.js",
         "file": "/test/read_place_type.js",
@@ -1161,7 +1255,7 @@
             "title": "See Response",
             "fullTitle": "First Request to Get Place types See Response",
             "timedOut": false,
-            "duration": 205,
+            "duration": 210,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -1170,7 +1264,7 @@
             "code": "res = await baseURL.get(place_type); //Sending the GET request\nconsole.log(res.body);",
             "err": {},
             "isRoot": false,
-            "uuid": "8a66efae-0bc9-42cb-a802-96e5d449c298",
+            "uuid": "28ad33f0-1d72-4a7d-b943-1cec8543ef14",
             "isHook": false,
             "skipped": false
           },
@@ -1187,7 +1281,7 @@
             "code": "await (expect(res.status).to.equal(200));",
             "err": {},
             "isRoot": false,
-            "uuid": "23e9a7b0-d96e-4e10-99d1-3981c43436ff",
+            "uuid": "38958e47-3847-4776-b124-9acfdf92466b",
             "isHook": false,
             "skipped": false
           },
@@ -1204,7 +1298,7 @@
             "code": "await (console.log(res.body.data.length));",
             "err": {},
             "isRoot": false,
-            "uuid": "b25b38b0-6893-49f5-a74b-dcaf0d8d7c9a",
+            "uuid": "af7516a5-fe32-44a8-9c6b-99a32a05ceb9",
             "isHook": false,
             "skipped": false
           },
@@ -1221,28 +1315,28 @@
             "code": "for(let i=0;i<res.body.data.length;i++){\n   await(console.log(res.body.data[i].id));\n}",
             "err": {},
             "isRoot": false,
-            "uuid": "aabc6388-2e03-4da6-99d3-8bc8ffb5ae23",
+            "uuid": "d9a7d73f-7f44-47b4-b49a-7d2318966dad",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "8a66efae-0bc9-42cb-a802-96e5d449c298",
-          "23e9a7b0-d96e-4e10-99d1-3981c43436ff",
-          "b25b38b0-6893-49f5-a74b-dcaf0d8d7c9a",
-          "aabc6388-2e03-4da6-99d3-8bc8ffb5ae23"
+          "28ad33f0-1d72-4a7d-b943-1cec8543ef14",
+          "38958e47-3847-4776-b124-9acfdf92466b",
+          "af7516a5-fe32-44a8-9c6b-99a32a05ceb9",
+          "d9a7d73f-7f44-47b4-b49a-7d2318966dad"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 205,
+        "duration": 210,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "71787413-565b-43aa-b1bd-23a140b6abbc",
+        "uuid": "1f48dc5f-9957-4aab-9869-87cb5d257bf1",
         "title": "First Request to Get Prices",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/read_price.js",
         "file": "/test/read_price.js",
@@ -1253,7 +1347,7 @@
             "title": "See Response",
             "fullTitle": "First Request to Get Prices See Response",
             "timedOut": false,
-            "duration": 220,
+            "duration": 219,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -1262,7 +1356,7 @@
             "code": "res = await baseURL.get(price); //Sending the GET request\nconsole.log(res.body);",
             "err": {},
             "isRoot": false,
-            "uuid": "e22ef9b8-55a3-4278-a195-7dae6c68442b",
+            "uuid": "8be31f88-9458-4795-9975-b84d9be924d9",
             "isHook": false,
             "skipped": false
           },
@@ -1270,7 +1364,7 @@
             "title": "checks that the response was OK",
             "fullTitle": "First Request to Get Prices checks that the response was OK",
             "timedOut": false,
-            "duration": 1,
+            "duration": 0,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -1279,7 +1373,7 @@
             "code": "await (expect(res.status).to.equal(200));",
             "err": {},
             "isRoot": false,
-            "uuid": "34211161-845b-4271-9c71-40bf8abafcf2",
+            "uuid": "a3927ae9-8706-4d31-98c7-a7cc428cbb53",
             "isHook": false,
             "skipped": false
           },
@@ -1296,7 +1390,7 @@
             "code": "await (console.log(res.body.data.length));",
             "err": {},
             "isRoot": false,
-            "uuid": "6f56a573-e898-481e-99d5-0b534be79ac8",
+            "uuid": "d2687d58-21b4-4bae-a0b2-8efc2dde1d76",
             "isHook": false,
             "skipped": false
           },
@@ -1313,28 +1407,28 @@
             "code": "for(let i=0;i<res.body.data.length;i++){\n   await(console.log(res.body.data[i].id));\n}",
             "err": {},
             "isRoot": false,
-            "uuid": "6eceeeb7-0f89-4245-bc7e-318755ac9f13",
+            "uuid": "e1973f6c-e46a-4406-9eb9-f67d726d74dd",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "e22ef9b8-55a3-4278-a195-7dae6c68442b",
-          "34211161-845b-4271-9c71-40bf8abafcf2",
-          "6f56a573-e898-481e-99d5-0b534be79ac8",
-          "6eceeeb7-0f89-4245-bc7e-318755ac9f13"
+          "8be31f88-9458-4795-9975-b84d9be924d9",
+          "a3927ae9-8706-4d31-98c7-a7cc428cbb53",
+          "d2687d58-21b4-4bae-a0b2-8efc2dde1d76",
+          "e1973f6c-e46a-4406-9eb9-f67d726d74dd"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 221,
+        "duration": 219,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "56975ded-1bee-49ff-ae08-b84fdbaf90e8",
+        "uuid": "19331178-a0e5-4552-ac1a-79cf15a82f7a",
         "title": "First Request to Get Purchases",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/read_purchase.js",
         "file": "/test/read_purchase.js",
@@ -1354,7 +1448,7 @@
             "code": "res = await baseURL.get(purchase); //Sending the GET request\nconsole.log(res.body);",
             "err": {},
             "isRoot": false,
-            "uuid": "2d09d49e-34f2-49c5-85cf-21177bb2b2c3",
+            "uuid": "d353ac8a-3e04-4056-925f-399d58130960",
             "isHook": false,
             "skipped": false
           },
@@ -1362,7 +1456,7 @@
             "title": "checks that the response was OK",
             "fullTitle": "First Request to Get Purchases checks that the response was OK",
             "timedOut": false,
-            "duration": 1,
+            "duration": 0,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -1371,7 +1465,7 @@
             "code": "await (expect(res.status).to.equal(200));",
             "err": {},
             "isRoot": false,
-            "uuid": "6e8b9e02-b0da-4324-bfc7-a2406840a1cd",
+            "uuid": "76b22600-5cf5-43e2-84ca-cbd35b0bf8a7",
             "isHook": false,
             "skipped": false
           },
@@ -1379,7 +1473,7 @@
             "title": "prints length of data array",
             "fullTitle": "First Request to Get Purchases prints length of data array",
             "timedOut": false,
-            "duration": 0,
+            "duration": 1,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -1388,7 +1482,7 @@
             "code": "await (console.log(res.body.data.length));",
             "err": {},
             "isRoot": false,
-            "uuid": "290ffe84-16a4-464b-9b57-3511035d7607",
+            "uuid": "9aa50170-f6f6-405f-a694-06a14c6065c8",
             "isHook": false,
             "skipped": false
           },
@@ -1405,17 +1499,17 @@
             "code": "for(let i=0;i<res.body.data.length;i++){\n   await(console.log(res.body.data[i].id));\n}",
             "err": {},
             "isRoot": false,
-            "uuid": "86c62b1d-09e6-486d-a0a9-82400cf96880",
+            "uuid": "13dac7f5-920b-4f34-b38d-755153a15f82",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "2d09d49e-34f2-49c5-85cf-21177bb2b2c3",
-          "6e8b9e02-b0da-4324-bfc7-a2406840a1cd",
-          "290ffe84-16a4-464b-9b57-3511035d7607",
-          "86c62b1d-09e6-486d-a0a9-82400cf96880"
+          "d353ac8a-3e04-4056-925f-399d58130960",
+          "76b22600-5cf5-43e2-84ca-cbd35b0bf8a7",
+          "9aa50170-f6f6-405f-a694-06a14c6065c8",
+          "13dac7f5-920b-4f34-b38d-755153a15f82"
         ],
         "failures": [],
         "pending": [],
@@ -1426,7 +1520,7 @@
         "_timeout": 2000
       },
       {
-        "uuid": "6305f159-a4c9-46e8-8442-084b18734fd2",
+        "uuid": "b9c5fc06-31e1-444b-8dca-f7889b0c992c",
         "title": "First Request to Get Tickets",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/read_ticket.js",
         "file": "/test/read_ticket.js",
@@ -1437,7 +1531,7 @@
             "title": "See Response",
             "fullTitle": "First Request to Get Tickets See Response",
             "timedOut": false,
-            "duration": 250,
+            "duration": 208,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -1446,7 +1540,7 @@
             "code": "res = await baseURL.get(ticket); //Sending the GET request\nconsole.log(res.body);",
             "err": {},
             "isRoot": false,
-            "uuid": "a94f0d79-7313-4fcd-9e79-4c9cd3f44f31",
+            "uuid": "31af212d-d389-4616-8e8b-2e9f2fe69655",
             "isHook": false,
             "skipped": false
           },
@@ -1463,7 +1557,7 @@
             "code": "await (expect(res.status).to.equal(200));",
             "err": {},
             "isRoot": false,
-            "uuid": "45b687ea-1a7b-4311-ae17-4f4752f5d82a",
+            "uuid": "9fe11bdc-a89e-4485-b068-2556dad11c2b",
             "isHook": false,
             "skipped": false
           },
@@ -1480,7 +1574,7 @@
             "code": "await (console.log(res.body.data.length));",
             "err": {},
             "isRoot": false,
-            "uuid": "3776340f-b75c-4f41-85b9-005d719a77a7",
+            "uuid": "c3696f6e-c7a9-4f13-b985-98985b4442d9",
             "isHook": false,
             "skipped": false
           },
@@ -1497,28 +1591,28 @@
             "code": "for(let i=0;i<res.body.data.length;i++){\n   await(console.log(res.body.data[i].id));\n}",
             "err": {},
             "isRoot": false,
-            "uuid": "480dfad0-9fb2-4e2a-8850-e233cb492c82",
+            "uuid": "d8fc31f8-c3b9-499e-a0b5-1864563c1120",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "a94f0d79-7313-4fcd-9e79-4c9cd3f44f31",
-          "45b687ea-1a7b-4311-ae17-4f4752f5d82a",
-          "3776340f-b75c-4f41-85b9-005d719a77a7",
-          "480dfad0-9fb2-4e2a-8850-e233cb492c82"
+          "31af212d-d389-4616-8e8b-2e9f2fe69655",
+          "9fe11bdc-a89e-4485-b068-2556dad11c2b",
+          "c3696f6e-c7a9-4f13-b985-98985b4442d9",
+          "d8fc31f8-c3b9-499e-a0b5-1864563c1120"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 251,
+        "duration": 209,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "1cab90a0-54a5-40cd-856a-a3756073ebc5",
+        "uuid": "5d6f833e-1ff4-4a15-a2e8-ef4bbb01d881",
         "title": "First Request to Get Ticket types",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/read_ticket_type.js",
         "file": "/test/read_ticket_type.js",
@@ -1529,7 +1623,7 @@
             "title": "See Response",
             "fullTitle": "First Request to Get Ticket types See Response",
             "timedOut": false,
-            "duration": 245,
+            "duration": 254,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -1538,7 +1632,7 @@
             "code": "res = await baseURL.get(ticket_type); //Sending the GET request\nconsole.log(res.body);",
             "err": {},
             "isRoot": false,
-            "uuid": "12a3e339-184e-4237-834a-1bde7937079a",
+            "uuid": "0b1a1cad-31cb-4b02-b0e5-b2c6deabe004",
             "isHook": false,
             "skipped": false
           },
@@ -1555,7 +1649,7 @@
             "code": "await (expect(res.status).to.equal(200));",
             "err": {},
             "isRoot": false,
-            "uuid": "a85ef268-a6f4-4747-997a-196c5ef7d7cb",
+            "uuid": "e61c037b-4dba-4777-9de3-b93f1939f982",
             "isHook": false,
             "skipped": false
           },
@@ -1572,7 +1666,7 @@
             "code": "await (console.log(res.body.data.length));",
             "err": {},
             "isRoot": false,
-            "uuid": "a848e05b-e30d-4930-bd72-55348bb04d98",
+            "uuid": "dbd49134-cc32-4d44-a0e2-258d079b7f17",
             "isHook": false,
             "skipped": false
           },
@@ -1589,28 +1683,120 @@
             "code": "for(let i=0;i<res.body.data.length;i++){\n   await(console.log(res.body.data[i].id));\n}",
             "err": {},
             "isRoot": false,
-            "uuid": "f57f8b2f-05e6-43ec-b597-37e90421ee25",
+            "uuid": "1d29e4eb-74f2-4fb0-9604-f27f2e6f9ccd",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "12a3e339-184e-4237-834a-1bde7937079a",
-          "a85ef268-a6f4-4747-997a-196c5ef7d7cb",
-          "a848e05b-e30d-4930-bd72-55348bb04d98",
-          "f57f8b2f-05e6-43ec-b597-37e90421ee25"
+          "0b1a1cad-31cb-4b02-b0e5-b2c6deabe004",
+          "e61c037b-4dba-4777-9de3-b93f1939f982",
+          "dbd49134-cc32-4d44-a0e2-258d079b7f17",
+          "1d29e4eb-74f2-4fb0-9604-f27f2e6f9ccd"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 245,
+        "duration": 254,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "71ac27f2-628e-4443-9d1b-7671a01c9053",
+        "uuid": "29e52f66-41dc-4b13-8e29-df76e4368df1",
+        "title": "First Request to Get Tours",
+        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/read_tour.js",
+        "file": "/test/read_tour.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "See Response",
+            "fullTitle": "First Request to Get Tours See Response",
+            "timedOut": false,
+            "duration": 199,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "res = await baseURL.get(tour); //Sending the GET request\nconsole.log(res.body);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "339e1a3d-23b6-4ed2-b5f9-be6b1ef3b892",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "checks that the response was OK",
+            "fullTitle": "First Request to Get Tours checks that the response was OK",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "await (expect(res.status).to.equal(200));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "2f1f4c46-fd49-42cc-87cf-8002105a03e2",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "prints length of data array",
+            "fullTitle": "First Request to Get Tours prints length of data array",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "await (console.log(res.body.data.length));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "f00d3f2b-edf5-4236-85e1-a5eac56c263f",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "gets the id from the array",
+            "fullTitle": "First Request to Get Tours gets the id from the array",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "for(let i=0;i<res.body.data.length;i++){\n   await(console.log(res.body.data[i].id));\n}",
+            "err": {},
+            "isRoot": false,
+            "uuid": "5720f7e4-2540-40e7-9d40-eb45beed2547",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "339e1a3d-23b6-4ed2-b5f9-be6b1ef3b892",
+          "2f1f4c46-fd49-42cc-87cf-8002105a03e2",
+          "f00d3f2b-edf5-4236-85e1-a5eac56c263f",
+          "5720f7e4-2540-40e7-9d40-eb45beed2547"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 199,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "1c4cd9a3-73a5-421a-a8b0-76ba6a96b388",
         "title": "First Request to Get Users",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/read_user.js",
         "file": "/test/read_user.js",
@@ -1621,7 +1807,7 @@
             "title": "See Response",
             "fullTitle": "First Request to Get Users See Response",
             "timedOut": false,
-            "duration": 258,
+            "duration": 226,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -1630,7 +1816,7 @@
             "code": "res = await baseURL.get(user); //Sending the GET request\nconsole.log(res.body);",
             "err": {},
             "isRoot": false,
-            "uuid": "02d5ee52-a8ee-4a1d-9393-ecf09038483d",
+            "uuid": "f0c599cf-c2f3-4646-9bff-0c5aa23d2a76",
             "isHook": false,
             "skipped": false
           },
@@ -1647,7 +1833,7 @@
             "code": "await (expect(res.status).to.equal(200));",
             "err": {},
             "isRoot": false,
-            "uuid": "6bc6129b-126e-4810-a5c0-9a287e012711",
+            "uuid": "25c00f41-78da-4064-93f9-3271937b92d7",
             "isHook": false,
             "skipped": false
           },
@@ -1664,7 +1850,7 @@
             "code": "await (console.log(res.body.data.length));",
             "err": {},
             "isRoot": false,
-            "uuid": "43deb3e1-2a4d-401e-a347-139f04a2e6c4",
+            "uuid": "3e23c59f-cd16-4c66-be91-f2a4ee565a51",
             "isHook": false,
             "skipped": false
           },
@@ -1681,28 +1867,28 @@
             "code": "for(let i=0;i<res.body.data.length;i++){\n   await(console.log(res.body.data[i].id));\n}",
             "err": {},
             "isRoot": false,
-            "uuid": "d68527f4-3aaf-41dc-b9c1-dec7ad4207cb",
+            "uuid": "36f981fb-417c-4ffb-ab44-c7f6641b57fc",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "02d5ee52-a8ee-4a1d-9393-ecf09038483d",
-          "6bc6129b-126e-4810-a5c0-9a287e012711",
-          "43deb3e1-2a4d-401e-a347-139f04a2e6c4",
-          "d68527f4-3aaf-41dc-b9c1-dec7ad4207cb"
+          "f0c599cf-c2f3-4646-9bff-0c5aa23d2a76",
+          "25c00f41-78da-4064-93f9-3271937b92d7",
+          "3e23c59f-cd16-4c66-be91-f2a4ee565a51",
+          "36f981fb-417c-4ffb-ab44-c7f6641b57fc"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 258,
+        "duration": 226,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "e3dbccd1-d747-45ec-87ae-df81b2226644",
+        "uuid": "b4f710b1-6c5c-40b1-a48a-c50febb645a8",
         "title": "PUT Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/update_company.js",
         "file": "/test/update_company.js",
@@ -1710,10 +1896,10 @@
         "afterHooks": [],
         "tests": [
           {
-            "title": "makes a POST call ",
-            "fullTitle": "PUT Request makes a POST call ",
+            "title": "makes a PUT call ",
+            "fullTitle": "PUT Request makes a PUT call ",
             "timedOut": false,
-            "duration": 204,
+            "duration": 203,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -1722,25 +1908,25 @@
             "code": "put_resp = await baseURL.put(company)\n    .type('form')\n    .send({\n        \"name\": \"Estrella Verde\",\n        \"full_name\": \"Estrella Verde S.A. de C.V.\",\n        \"phone_number\": \"12345456277\",\n        \"street\": \"Calle Callerous\",\n        \"postal_coce\": \"72767\",\n        \"rfc\": \"h23r09hv29h32d09hhj\",\n        \"ieps\": \"11\",\n        \"iva\": \".161\",\n        \"latitude\": \"20.3148972\",\n        \"longitude\": \"-34.4917203984\",\n    })\n    .set('Accept', '/application/\\json/');\nawait (console.log(put_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "8e7e5585-cb58-4cd6-a055-57c42a318813",
+            "uuid": "75342fe4-d665-4416-93e5-7f7b073e9fe9",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "8e7e5585-cb58-4cd6-a055-57c42a318813"
+          "75342fe4-d665-4416-93e5-7f7b073e9fe9"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 204,
+        "duration": 203,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "f3d4e382-28e1-4c07-9131-eb12eec196e4",
+        "uuid": "ac921196-5c82-4bb6-b649-2b44bb7b5c93",
         "title": "PUT Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/update_narrative.js",
         "file": "/test/update_narrative.js",
@@ -1748,10 +1934,10 @@
         "afterHooks": [],
         "tests": [
           {
-            "title": "makes a POST call ",
-            "fullTitle": "PUT Request makes a POST call ",
+            "title": "makes a PUT call ",
+            "fullTitle": "PUT Request makes a PUT call ",
             "timedOut": false,
-            "duration": 217,
+            "duration": 286,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -1760,25 +1946,25 @@
             "code": "put_resp = await baseURL.put(narrative)\n    .type('form')\n    .send({\n        \"audio_path\": \"this is an audio path\",\n        \"description\": \"ababbabadfjfbasklbksbfekfbalsejfakefaskeufbskefabsefjyasefjbfkjhsebakjehfbaksjehfwjef\"\n    })\n    .set('Accept', '/application/\\json/');\nawait (console.log(put_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "4c4bcf7d-8011-4f4b-8fae-dbd5f8fd5539",
+            "uuid": "beac5430-b5be-4ef9-9eef-15fc84519755",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "4c4bcf7d-8011-4f4b-8fae-dbd5f8fd5539"
+          "beac5430-b5be-4ef9-9eef-15fc84519755"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 217,
+        "duration": 286,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "79260d9d-0b2c-41fc-a536-b47c2d541be2",
+        "uuid": "5b26ced2-d531-4c75-b91b-544a1c23e428",
         "title": "PUT Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/update_place.js",
         "file": "/test/update_place.js",
@@ -1786,10 +1972,10 @@
         "afterHooks": [],
         "tests": [
           {
-            "title": "makes a POST call ",
-            "fullTitle": "PUT Request makes a POST call ",
+            "title": "makes a PUT call ",
+            "fullTitle": "PUT Request makes a PUT call ",
             "timedOut": false,
-            "duration": 246,
+            "duration": 205,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -1798,25 +1984,25 @@
             "code": "put_resp = await baseURL.put(place)\n    .type('form')\n    .send({\n        \"place_type_id\": \"1\",\n        \"narrative_id\": \"1\",\n        \"name\": \"catedral\",\n        \"longitude\": \"0\",\n        \"latitude\": \"0\",\n        \"description\": \"la catedral mas extrema de mexico\"\n    })\n    .set('Accept', '/application/\\json/');\nawait (console.log(put_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "b76dec79-3f36-4de5-954b-50e68a9e26e0",
+            "uuid": "e599d85d-080b-44bb-b1ba-af944699a61f",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "b76dec79-3f36-4de5-954b-50e68a9e26e0"
+          "e599d85d-080b-44bb-b1ba-af944699a61f"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 246,
+        "duration": 205,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "cbf1a92c-72fc-44ae-a987-7299bb82db81",
+        "uuid": "9cf46f82-81ef-4f32-856f-1690f928a21e",
         "title": "PUT Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/update_place_type.js",
         "file": "/test/update_place_type.js",
@@ -1824,10 +2010,10 @@
         "afterHooks": [],
         "tests": [
           {
-            "title": "makes a POST call ",
-            "fullTitle": "PUT Request makes a POST call ",
+            "title": "makes a PUT call ",
+            "fullTitle": "PUT Request makes a PUT call ",
             "timedOut": false,
-            "duration": 252,
+            "duration": 274,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -1836,25 +2022,25 @@
             "code": "put_resp = await baseURL.put(place_type)\n    .type('form')\n    .send({\n        \"name\": \"hotel\",\n    })\n    .set('Accept', '/application/\\json/');\nawait (console.log(put_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "80c3e116-707a-425a-81d3-9c4882db5403",
+            "uuid": "a874675b-50b8-4781-815c-e2aa43ddf7d0",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "80c3e116-707a-425a-81d3-9c4882db5403"
+          "a874675b-50b8-4781-815c-e2aa43ddf7d0"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 252,
+        "duration": 274,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "be6d6603-8b6b-4ca0-8ffa-aac108164dd5",
+        "uuid": "eab4b2ae-0d97-4615-afc8-7f0e45cfcda3",
         "title": "PUT Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/update_price.js",
         "file": "/test/update_price.js",
@@ -1862,10 +2048,10 @@
         "afterHooks": [],
         "tests": [
           {
-            "title": "makes a POST call ",
-            "fullTitle": "PUT Request makes a POST call ",
+            "title": "makes a PUT call ",
+            "fullTitle": "PUT Request makes a PUT call ",
             "timedOut": false,
-            "duration": 204,
+            "duration": 214,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -1874,25 +2060,25 @@
             "code": "put_resp = await baseURL.put(price)\n    .type('form')\n    .send({\n        \"ticket_type_id\": \"2\",\n        \"tour_id\": \"2\",\n        \"amount\": \"11\"\n    })\n    .set('Accept', '/application/\\json/');\nawait (console.log(put_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "5e288eab-3b1d-49b5-9dc5-000b36ac7ac3",
+            "uuid": "b9525696-5df6-4c0f-a2b0-ad73fd76fd4e",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "5e288eab-3b1d-49b5-9dc5-000b36ac7ac3"
+          "b9525696-5df6-4c0f-a2b0-ad73fd76fd4e"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 204,
+        "duration": 214,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "ff8e8099-9233-4c1c-82e7-3c5812fa07c7",
+        "uuid": "5d9646b1-c254-4a9f-ae2b-fb9108dd341a",
         "title": "PUT Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/update_purchase.js",
         "file": "/test/update_purchase.js",
@@ -1900,8 +2086,8 @@
         "afterHooks": [],
         "tests": [
           {
-            "title": "makes a POST call ",
-            "fullTitle": "PUT Request makes a POST call ",
+            "title": "makes a PUT call ",
+            "fullTitle": "PUT Request makes a PUT call ",
             "timedOut": false,
             "duration": 241,
             "state": "passed",
@@ -1912,14 +2098,14 @@
             "code": "put_resp = await baseURL.put(purchase)\n    .type('form')\n    .send({\n        \"company_id\": \"2\",\n        \"user_id\": \"2\",\n        \"sub_total\": \"11\",\n        \"total\": \"110\"\n    })\n    .set('Accept', '/application/\\json/');\nawait (console.log(put_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "0e9d3ef9-edd2-4a77-b876-b8f749e8bb1f",
+            "uuid": "1bed88af-e81d-4b98-8e5b-0aec14fdd319",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "0e9d3ef9-edd2-4a77-b876-b8f749e8bb1f"
+          "1bed88af-e81d-4b98-8e5b-0aec14fdd319"
         ],
         "failures": [],
         "pending": [],
@@ -1930,7 +2116,7 @@
         "_timeout": 2000
       },
       {
-        "uuid": "890c8ecb-3674-45d9-a2f5-a20dd0d71dee",
+        "uuid": "b1cc6724-a931-442a-a42f-b9ad7f6efaf9",
         "title": "PUT Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/update_ticket.js",
         "file": "/test/update_ticket.js",
@@ -1938,10 +2124,10 @@
         "afterHooks": [],
         "tests": [
           {
-            "title": "makes a POST call ",
-            "fullTitle": "PUT Request makes a POST call ",
+            "title": "makes a PUT call ",
+            "fullTitle": "PUT Request makes a PUT call ",
             "timedOut": false,
-            "duration": 216,
+            "duration": 219,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -1950,25 +2136,25 @@
             "code": "put_resp = await baseURL.put(ticket)\n    .type('form')\n    .send({\n        \"purchase_id\": \"1\",\n        \"price_id\": \"1\",\n        \"client_name\": \"Choko\",\n        \"client_last_name\": \"Man\",\n        \"client_age\": \"10\",\n        \"tour_date\": \"1/12/2018\",\n        \"qr_code\": \"qrcodegefen/api/usr=?ea\",\n        \"total\": \"100.0\"\n    })\n    .set('Accept', '/application/\\json/');\nawait (console.log(put_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "36ab0389-a03e-4d57-b136-95dee9cb69d7",
+            "uuid": "ffbf336c-31c1-4cfe-a186-43476aaa32db",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "36ab0389-a03e-4d57-b136-95dee9cb69d7"
+          "ffbf336c-31c1-4cfe-a186-43476aaa32db"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 216,
+        "duration": 219,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "c9562d5d-ae76-4e4d-bf72-ea6a40732e8d",
+        "uuid": "4da3f062-5dce-4cda-89c8-4aa1abb5ed15",
         "title": "PUT Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/update_ticket_type.js",
         "file": "/test/update_ticket_type.js",
@@ -1976,10 +2162,10 @@
         "afterHooks": [],
         "tests": [
           {
-            "title": "makes a POST call ",
-            "fullTitle": "PUT Request makes a POST call ",
+            "title": "makes a PUT call ",
+            "fullTitle": "PUT Request makes a PUT call ",
             "timedOut": false,
-            "duration": 215,
+            "duration": 247,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -1988,25 +2174,63 @@
             "code": "put_resp = await baseURL.put(ticket_type)\n    .type('form')\n    .send({\n        \"name\": \"inapam\",\n    })\n    .set('Accept', '/application/\\json/');\nawait (console.log(put_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "d24c1317-87fd-4e08-95e5-61fc2a498b81",
+            "uuid": "652a262a-f6fe-4aa5-bab5-2a7dcb7edd64",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "d24c1317-87fd-4e08-95e5-61fc2a498b81"
+          "652a262a-f6fe-4aa5-bab5-2a7dcb7edd64"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 215,
+        "duration": 247,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
       },
       {
-        "uuid": "71b0a844-2a63-49b2-a9ff-9686327c63ce",
+        "uuid": "c2c556b4-9069-493c-91a5-ea010e9b84d1",
+        "title": "PUT Request",
+        "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/update_tour.js",
+        "file": "/test/update_tour.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "makes a PUT call ",
+            "fullTitle": "PUT Request makes a PUT call ",
+            "timedOut": false,
+            "duration": 245,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "put_resp = await baseURL.put(tour)\n    .type('form')\n    .send({\n        \"name\": \"Puebla fascinante\",\n        \"image_path\": \"src/img.png\",\n        \"description\": \"este tour esta padrisimo, deja te explico porque, fijate que te hace un recorrido...jiji\"\n    })\n    .set('Accept', '/application/\\json/');\nawait (console.log(put_resp.body));",
+            "err": {},
+            "isRoot": false,
+            "uuid": "d01afcb2-b7fc-4f98-81d6-51f696ebe3cb",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "d01afcb2-b7fc-4f98-81d6-51f696ebe3cb"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 245,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "bc20f791-743e-43ad-a865-b3d099975b16",
         "title": "PUT Request",
         "fullFile": "/Users/fs/Desktop/WebPanelAdministracionBack/test/update_user.js",
         "file": "/test/update_user.js",
@@ -2014,10 +2238,10 @@
         "afterHooks": [],
         "tests": [
           {
-            "title": "makes a POST call ",
-            "fullTitle": "PUT Request makes a POST call ",
+            "title": "makes a PUT call ",
+            "fullTitle": "PUT Request makes a PUT call ",
             "timedOut": false,
-            "duration": 240,
+            "duration": 200,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -2026,19 +2250,19 @@
             "code": "put_resp = await baseURL.put(user)\n    .type('form')\n    .send({\n        \"user_type\": \"administrator\",\n        \"name\": \"Rayu\",\n        \"last_name\": \"Amin\",\n        \"email\": \"rayu@er.com\",\n        \"birthdate\": \"1/1/1980\",\n        \"password\": \"bimbo\",\n        \"postal_code\": \"77777\",\n        \"phone_number\": \"2222121212\"\n    })\n    .set('Accept', '/application/\\json/');\nawait (console.log(put_resp.body));",
             "err": {},
             "isRoot": false,
-            "uuid": "75d87705-f95e-40b9-b71a-295298c1c036",
+            "uuid": "6e016855-f2da-4738-8704-45acfc5c3b05",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "75d87705-f95e-40b9-b71a-295298c1c036"
+          "6e016855-f2da-4738-8704-45acfc5c3b05"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 240,
+        "duration": 200,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
