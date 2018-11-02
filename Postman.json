@@ -1,0 +1,3114 @@
+{
+	"info": {
+		"_postman_id": "884ad780-683e-4eaf-ae08-4cadee849b3a",
+		"name": "ER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PUT on Activated at",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/activated_at/2",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"activated_at",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Tour stop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour_stop",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour_stop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Narrative",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/narrative",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"narrative"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Tour",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Company",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/company/2",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"company",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Mural",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/mural",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"mural"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Mural",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/mural/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"mural",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/user",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Place image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/place_image",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"place_image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Tour stop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour_stop/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour_stop",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Ticket",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/ticket/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"ticket",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Place image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/place_image/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"place_image",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Tour schedule",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour_schedule",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour_schedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Image",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/image/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"image",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Purchase",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/purchase/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"purchase",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/image",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Place type",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/place_type",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"place_type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Bracelet",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/bracelet",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"bracelet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all one Place type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/place_type",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"place_type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Activated at",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/activated_at/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"activated_at",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Activated at",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/activated_at",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"activated_at"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Bus",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/bus/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"bus",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Mural",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/mural/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"mural",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Mural",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/mural/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"mural",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Place image",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/place_image/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"place_image",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Schedule",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/schedule/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"schedule",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/user/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/price",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Bracelet",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/bracelet/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"bracelet",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Place type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/place_type/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"place_type",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Narrative",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/narrative/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"narrative",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all on Ticket type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/ticket_type",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"ticket_type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Price",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/price",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Ticket",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/ticket/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"ticket",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Company",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/company",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"company"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Narrative",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/narrative",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"narrative"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Tour place",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour_place",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour_place"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Date interval",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/date_interval/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"date_interval",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Place",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/place/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"place",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Tour place",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour_place/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour_place",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Schedule",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/schedule",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"schedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Activated at",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/activated_at/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"activated_at",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all one Purchase",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/purchase",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"purchase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Bracelet",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/bracelet/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"bracelet",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Date interval",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/date_interval",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"date_interval"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Ticket type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/ticket_type/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"ticket_type",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Tour",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Schedule",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/schedule/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"schedule",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Ticket",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/ticket",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"ticket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Place image",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/place_image/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"place_image",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Tour schedule",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour_schedule/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour_schedule",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Hour interval",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/hour_interval",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"hour_interval"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Stop",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/stop/2",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"stop",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Purchase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/purchase",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"purchase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Place",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/place/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"place",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Hour interval",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/hour_interval/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"hour_interval",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Price",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/price/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"price",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one on Company",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/company/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"company",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Tour stop",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour_stop/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour_stop",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Tour stop",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour_stop/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour_stop",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Tour schedule",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour_schedule",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour_schedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Activated at",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/activated_at",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"activated_at"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Company",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/company/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"company",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Tour stop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour_stop",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour_stop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Tour place",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour_place/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour_place",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Mural",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/mural",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"mural"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on User",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/user/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Tour place",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour_place/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour_place",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Tour schedule",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour_schedule/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour_schedule",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Stop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/stop",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"stop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Tour",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Stop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/stop",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"stop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Place type",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/place_type/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"place_type",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Place Type",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/place_type/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"place_type",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Narrative",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/narrative/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"narrative",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Hour interval",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/hour_interval/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"hour_interval",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Narrative",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/narrative/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"narrative",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Tour place",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour_place",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour_place"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Schedule",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/schedule/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"schedule",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Hour interval",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/hour_interval",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"hour_interval"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Stop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/stop/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"stop",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Bracelet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/bracelet",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"bracelet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Purchase",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/purchase/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"purchase",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Tour",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Purchase",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/purchase/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"purchase",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Price",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/price/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"price",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Tour",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET on on Image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/image/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"image",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Ticket type",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/ticket_type/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"ticket_type",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Place",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/place/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"place",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Stop",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/stop/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"stop",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Tour schedule",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/tour_schedule/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"tour_schedule",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/company",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"company"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/user/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Bracelet",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/bracelet/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"bracelet",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Bus",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/bus",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"bus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Hour interval",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/hour_interval/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"hour_interval",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Ticket",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/ticket",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"ticket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Date interval",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/date_interval/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"date_interval",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Date interval",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/date_interval/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"date_interval",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Ticket",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/ticket/3",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"ticket",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/price/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"price",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Ticket Type",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/ticket_type/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"ticket_type",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/image",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT on Bus",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/bus/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"bus",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Bus",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/bus",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"bus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Schedule",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/schedule",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"schedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Place",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/place",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"place"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Date interval",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/date_interval",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"date_interval"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Place",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/place",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"place"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on Ticket type",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f1a06391-eb92-4bea-bd3d-ec1e71969448",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/ticket_type",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"ticket_type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST on User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/user",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE on Image",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/image/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"image",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one on Bus",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/bus/1",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"bus",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all on Place image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://principal-arena-219118.appspot.com/api/place_image",
+					"protocol": "http",
+					"host": [
+						"principal-arena-219118",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"api",
+						"place_image"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
