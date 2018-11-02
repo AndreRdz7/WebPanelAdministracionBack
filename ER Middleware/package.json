@@ -32,6 +32,7 @@
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
     "pg": "^7.4.3",
+    "safe-buffer": "5.1.1",
     "sequelize": "^4.37.10",
     "sequelize-cli": "^4.0.0",
     "should": "^13.2.3",
@@ -39,6 +40,12 @@
   },
   "devDependencies": {
     "nodemon": "^1.17.5",
-    "winston": "^2.4.2"
+    "winston": "^2.4.2",
+    "@google-cloud/nodejs-repo-tools": "^2.3.0",
+    "ava": "0.25.0",
+    "proxyquire": "2.0.0",
+    "semistandard": "^12.0.1",
+    "sinon": "4.4.2",
+    "supertest": "3.0.0"
   }
 }
