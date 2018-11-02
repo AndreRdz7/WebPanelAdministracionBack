@@ -1,5 +1,4 @@
 const Sequelize = require('sequelize');
-const winston = require('winston');
 
 module.exports = function(app){
     let date_interval = app.models.schema.date_interval;
@@ -8,11 +7,11 @@ module.exports = function(app){
         index: function(req,res){
             date_interval.findAll({})
             .then(function(date_interval){
-                winston.log('Succes at getting all date intervals from the BD');
+                console.log('Succes at getting all date intervals from the BD');
                 res.status(200).json(date_interval);
             })
             .catch(err => {
-                winston.error(err);
+                console.error(err);
                 res.json(err);
             })
         },
@@ -23,11 +22,11 @@ module.exports = function(app){
                 status: req.body.status || null
             })
             .then(newDate_interval => {
-                winston.log('Created a new date interval');
+                console.log('Created a new date interval');
                 res.status(200).json(newDate_interval);
             })
             .catch(err => {
-                winston.error(err);
+                console.error(err);
                 res.json(err);
             });
         },

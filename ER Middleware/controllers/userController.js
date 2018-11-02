@@ -1,5 +1,4 @@
 const sequelize = require('sequelize');
-const winston = require('winston');
 
 module.exports = function (app) 
 {
@@ -16,12 +15,12 @@ module.exports = function (app)
             })
                 .then(function (users)
                 {
-                    winston.log('Success at getting all the users in the DB');
+                    console.log('Success at getting all the users in the DB');
                     res.status(200).json(users);
                 })
                 .catch(err =>
                 {
-                    winston.error(err);
+                    console.error(err);
                     res.json(err);
                 });
         },
@@ -58,13 +57,13 @@ module.exports = function (app)
             })
                 .then(async newUser => 
                 {
-                    winston.log('Created a new user');
+                    console.log('Created a new user');
                     res.status(200).json({
                         data: newUser
                     });
                 })
                 .catch(err => {
-                    winston.error(err);
+                    console.error(err);
                     res.json(err);
                 });
         },

@@ -1,5 +1,4 @@
 const Sequelize = require('sequelize');
-const winston = require('winston');
 
 module.exports = function(app){
     let hour_interval = app.models.schema.hour_interval;
@@ -8,11 +7,11 @@ module.exports = function(app){
         index: function(req,res){
             hour_interval.findAll({})
             .then(function(hour_interval){
-                winston.log('Succes at getting all hour intervals from the BD');
+                console.log('Succes at getting all hour intervals from the BD');
                 res.status(200).json(hour_interval);
             })
             .catch(err => {
-                winston.error(err);
+                console.error(err);
                 res.json(err);
             })
         },
@@ -23,11 +22,11 @@ module.exports = function(app){
                 frequency: req.body.frequency || null
             })
             .then(newHour_interval => {
-                winston.log('Created a new hour interval');
+                console.log('Created a new hour interval');
                 res.status(200).json(newHour_interval);
             })
             .catch(err => {
-                winston.error(err);
+                console.error(err);
                 res.json(err);
             });
         },

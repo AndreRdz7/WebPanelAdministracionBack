@@ -40,7 +40,6 @@
   },
   "devDependencies": {
     "nodemon": "^1.17.5",
-    "winston": "^2.4.2",
     "@google-cloud/nodejs-repo-tools": "^2.3.0",
     "ava": "0.25.0",
     "proxyquire": "2.0.0",

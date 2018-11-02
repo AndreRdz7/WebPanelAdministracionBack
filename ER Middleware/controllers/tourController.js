@@ -1,5 +1,4 @@
 const Sequelize = require('sequelize');
-const winston = require('winston');
 
 module.exports = function(app){
     let tour = app.models.schema.tour;
@@ -8,11 +7,11 @@ module.exports = function(app){
         index: function(req,res){
             tour.findAll({})
             .then(function(tour){
-                winston.log('Succes at getting all tours from the BD');
+                console.log('Succes at getting all tours from the BD');
                 res.status(200).json(tour);
             })
             .catch(err => {
-                winston.error(err);
+                console.error(err);
                 res.json(err);
             })
         },
@@ -23,11 +22,11 @@ module.exports = function(app){
                 description: req.body.description || null
             })
             .then(newTour => {
-                winston.log('Created a new tour');
+                console.log('Created a new tour');
                 res.status(200).json(newTour);
             })
             .catch(err => {
-                winston.error(err);
+                console.error(err);
                 res.json(err);
             });
         },

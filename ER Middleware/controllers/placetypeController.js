@@ -1,5 +1,4 @@
 const Sequelize = require('sequelize');
-const winston = require('winston');
 
 module.exports = function(app){
     let place_type = app.models.schema.place_type;
@@ -8,11 +7,11 @@ module.exports = function(app){
         index: function(req,res){
             place_type.findAll({})
             .then(function(place_type){
-                winston.log('Succes at getting all place types from the BD');
+                console.log('Succes at getting all place types from the BD');
                 res.status(200).json(place_type);
             })
             .catch(err => {
-                winston.error(err);
+                console.error(err);
                 res.json(err);
             })
         },
@@ -21,11 +20,11 @@ module.exports = function(app){
                 name: req.body.name || null
             })
             .then(newPlace_type => {
-                winston.log('Created a new place type');
+                console.log('Created a new place type');
                 res.status(200).json(newPlace_type);
             })
             .catch(err => {
-                winston.error(err);
+                console.error(err);
                 res.json(err);
             });
         },

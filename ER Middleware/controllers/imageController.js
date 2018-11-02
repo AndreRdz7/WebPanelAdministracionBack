@@ -1,5 +1,4 @@
 const Sequelize = require('sequelize');
-const winston = require('winston');
 
 module.exports = function(app){
     let image = app.models.schema.image;
@@ -8,11 +7,11 @@ module.exports = function(app){
         index: function(req,res){
             image.findAll({})
             .then(function(image){
-                winston.log('Succes at getting all images from the BD');
+                console.log('Succes at getting all images from the BD');
                 res.status(200).json(image);
             })
             .catch(err => {
-                winston.error(err);
+                console.error(err);
                 res.json(err);
             })
         },
@@ -22,11 +21,11 @@ module.exports = function(app){
                 description: req.body.description || null
             })
             .then(newImage => {
-                winston.log('Created a new image');
+                console.log('Created a new image');
                 res.status(200).json(newImage);
             })
             .catch(err => {
-                winston.error(err);
+                console.error(err);
                 res.json(err);
             });
         },

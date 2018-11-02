@@ -1,5 +1,4 @@
 const Sequelize = require('sequelize');
-const winston = require('winston');
 
 module.exports = function(app){
     let mural = app.models.schema.mural;
@@ -8,11 +7,11 @@ module.exports = function(app){
         index: function(req,res){
             mural.findAll({})
             .then(function(mural){
-                winston.log('Succes at getting all murals from the BD');
+                console.log('Succes at getting all murals from the BD');
                 res.status(200).json(mural);
             })
             .catch(err => {
-                winston.error(err);
+                console.error(err);
                 res.json(err);
             })
         },
@@ -24,11 +23,11 @@ module.exports = function(app){
                 description: req.body.description || null
             })
             .then(newMural => {
-                winston.log('Created a new mural');
+                console.log('Created a new mural');
                 res.status(200).json(newMural);
             })
             .catch(err => {
-                winston.error(err);
+                console.error(err);
                 res.json(err);
             });
         },
