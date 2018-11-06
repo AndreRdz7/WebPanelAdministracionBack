@@ -18,7 +18,7 @@ module.exports = function(app){
         create: function(req,res){
             bus.create({
                 tour_id: req.body.tour_id || null,
-                mural_id: req.params.mural_id || null,
+                mural_id: req.body.mural_id || null,
                 capacity: req.body.capacity || null,
                 sold_tickets: req.body.sold_tickets || null,
                 status: req.body.status || null
