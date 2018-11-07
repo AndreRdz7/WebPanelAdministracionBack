@@ -18,7 +18,7 @@ module.exports = function(app){
         create: function(req,res){
             ticket.create({
                 purchase_id: req.body.purchase_id || null,
-                place_id: req.body.place_id || null,
+                price_id: req.body.price_id || null,
                 client_name: req.body.client_name || null,
                 client_last_name: req.body.client_last_name || null,
                 client_age: req.body.client_age || null,
@@ -61,7 +61,7 @@ module.exports = function(app){
                     ticket
                         .update({ 
                             purchase_id: req.body.purchase_id || ticket.purchase_id,
-                            place_id: req.body.place_id || ticket.place_id,
+                            price_id: req.body.price_id || ticket.price_id,
                             client_name: req.body.client_name || ticket.client_name,
                             client_last_name: req.body.client_last_name || ticket.client_last_name,
                             client_age: req.body.client_age || ticket.client_age,

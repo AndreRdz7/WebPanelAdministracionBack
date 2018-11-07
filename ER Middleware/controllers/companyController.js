@@ -26,7 +26,7 @@ module.exports = function(app){
                 ieps: req.body.ieps || null,
                 iva: req.body.iva || null,
                 latitude: req.body.latitude || null,
-                longitud: req.body.longitud || null
+                longitude: req.body.longitude || null
             })
             .then(newCompany => {
                 console.log('Created a new company');
@@ -71,7 +71,7 @@ module.exports = function(app){
                             ieps: req.body.ieps || company.ieps,
                             iva: req.body.iva || company.iva,
                             latitude: req.body.latitude || company.latitude,
-                            longitud: req.body.longitud || company.longitud
+                            longitude: req.body.longitude || company.longitude
                             
                         })
                         .then(() => res.status(200).json(company))
