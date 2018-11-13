@@ -233,4 +233,7 @@ module.exports = function(app){
         .put(userController.update)
         .delete(userController.delete);
     
+        // Authentication routes
+    app.route('/api/auth/login')
+        .post(userController.login);
 };
