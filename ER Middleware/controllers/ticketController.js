@@ -22,6 +22,7 @@ module.exports = function(app){
                 client_name: req.body.client_name || null,
                 client_last_name: req.body.client_last_name || null,
                 client_age: req.body.client_age || null,
+                client_genre: req.body.client_genre || null,
                 tour_date: req.body.tour_date || null,
                 qr_code: req.body.qr_code || null,
                 total: req.body.total || null
@@ -65,6 +66,7 @@ module.exports = function(app){
                             client_name: req.body.client_name || ticket.client_name,
                             client_last_name: req.body.client_last_name || ticket.client_last_name,
                             client_age: req.body.client_age || ticket.client_age,
+                            client_genre: req.body.client_genre || ticket.client_genre,
                             tour_date: req.body.tour_date || ticket.tour_date,
                             qr_code: req.body.qr_code || ticket.qr_code,
                             total: req.body.total || ticket.total

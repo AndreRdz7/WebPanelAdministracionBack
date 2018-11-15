@@ -200,6 +200,7 @@ create table ticket
 	client_name varchar(100),
 	client_last_name varchar(100),
 	client_age int,
+	client_genre enum('female', 'male'),
 	tour_date date,
 	qr_code text,
 
