@@ -6,7 +6,8 @@ module.exports = (sequelize, DataTypes) =>
         name: DataTypes.STRING,
         longitude: DataTypes.DOUBLE,
         latitude: DataTypes.DOUBLE,
-        description: DataTypes.TEXT
+        description: DataTypes.TEXT,
+        image_path: DataTypes.STRING,
     },
     {
         tableName: 'stop'

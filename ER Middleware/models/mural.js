@@ -5,7 +5,8 @@ module.exports = (sequelize, DataTypes) => {
         title: DataTypes.STRING,
         author_name: DataTypes.STRING,
         author_last_name: DataTypes.STRING,
-        description: DataTypes.TEXT
+        description: DataTypes.TEXT,
+        image_path: DataTypes.STRING,
     }, {
         tableName: 'mural'
     });

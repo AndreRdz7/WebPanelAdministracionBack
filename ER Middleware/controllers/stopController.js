@@ -20,7 +20,8 @@ module.exports = function(app){
                 name: req.body.name || null,
                 longitude: req.body.longitude || null,
                 latitude: req.body.latitude || null,
-                description: req.body.description || null
+                description: req.body.description || null,
+                image_path: req.body.image_path || null
             })
             .then(newStop => {
                 console.log('Created a new stop');
@@ -59,7 +60,8 @@ module.exports = function(app){
                             name: req.body.name || stop.name,
                             longitude: req.body.longitude || stop.longitude,
                             latitude: req.body.latitude || stop.latitude,
-                            description: req.body.description || stop.description
+                            description: req.body.description || stop.description,
+                            image_path: req.body.image_path || mural.image_path
                         })
                         .then(() => res.status(200).json(stop))
                         .catch(err => {

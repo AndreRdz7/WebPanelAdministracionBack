@@ -35,7 +35,7 @@ create table mural
 	author_name varchar(100), 
 	author_last_name varchar(100), 
 	description text, 
-
+	image_path varchar(1000),
 
 	created_at datetime default current_timestamp, 
 	updated_at datetime default current_timestamp on update current_timestamp
@@ -123,6 +123,7 @@ create table stop
 	longitude double,
 	latitude double,
 	description text,
+	image_path varchar(1000),
 	
 	created_at datetime default current_timestamp, 
 	updated_at datetime default current_timestamp on update current_timestamp
