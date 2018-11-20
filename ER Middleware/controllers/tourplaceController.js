@@ -17,7 +17,7 @@ module.exports = function(app){
         },
         create: function(req,res){
             tour_place.create({
-                tour_id: req.params.tour_id || null,
+                tour_id: req.body.tour_id || null,
                 place_id: req.body.place_id || null
             })
             .then(newTour_place => {
@@ -54,7 +54,7 @@ module.exports = function(app){
                     }
                     tour_place
                         .update({ 
-                            tour_id: req.params.tour_id || tour_place.tour_id,
+                            tour_id: req.body.tour_id || tour_place.tour_id,
                             place_id: req.body.place_id || tour_place.place_id
                         })
                         .then(() => res.status(200).json(tour_place))
