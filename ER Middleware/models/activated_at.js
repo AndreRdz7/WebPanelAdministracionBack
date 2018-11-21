@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'activated_at'
     });
     activated_at.associate = function(models){
-        activated_at.hasOne(models.bracelet,{
+        activated_at.hasMany(models.bracelet,{
             foreignKey: 'activated_at_id',
             //as: 'activated_at_id'
         });

@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) =>
         tableName: 'date_interval'
     });
     date_interval.associate = function(models){
-        date_interval.hasOne(models.schedule, {
+        date_interval.hasMany(models.schedule, {
             foreignKey: 'date_interval_id',
             //as: 'date_interval_id'
         })

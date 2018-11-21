@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) =>
             foreignKey: 'hour_interval_id',
             //as: 'hour_interval_id'
         });
-        schedule.hasOne(models.tour_schedule,{
+        schedule.hasMany(models.tour_schedule,{
             foreignKey: 'schedule_id',
             //as: 'schedule_id'
         })

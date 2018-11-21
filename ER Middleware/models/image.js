@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'image'
     });
     image.associate = function(models){
-        image.hasOne(models.place_image,{
+        image.hasMany(models.place_image,{
             foreignKey: 'image_id',
             //as: 'image_id'
         });

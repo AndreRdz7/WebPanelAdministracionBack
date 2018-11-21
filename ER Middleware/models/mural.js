@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'mural'
     });
     mural.associate = function(models){
-        mural.hasOne(models.bus, {
+        mural.hasMany(models.bus, {
             foreignKey: 'mural_id',
             //as: 'mural_id'
         });

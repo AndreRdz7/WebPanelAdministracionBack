@@ -47,7 +47,7 @@ module.exports = function (app)
         create: function (req, res)
         {
             user.create({
-                user_type: req.body.user_type || null,
+                user_type: req.body.user_type || 'client',
                 name: req.body.name || null,
                 last_name: req.body.last_name || null,
                 email: req.body.email || null,

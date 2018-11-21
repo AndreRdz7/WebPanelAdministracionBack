@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) =>
             foreignKey: 'tour_id',
             //as: 'tour_id'
         });
-        price.hasOne(models.ticket, {
+        price.hasMany(models.ticket, {
             foreignKey: 'price_id',
             //as: 'price_id'
         });

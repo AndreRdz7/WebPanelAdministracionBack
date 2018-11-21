@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'company'
     });
     company.associate = function(models){
-        company.hasOne(models.purchase, {
+        company.hasMany(models.purchase, {
             foreignKey: 'company_id',
             //as: 'company_id'
         });

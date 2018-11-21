@@ -29,7 +29,7 @@ module.exports = (sequelize, DataTypes) =>
             foreignKey: 'price_id',
             //as: 'price_id'
         });
-        ticket.hasOne(models.bracelet, {
+        ticket.hasMany(models.bracelet, {
             foreignKey: 'ticket_id',
             //as: 'ticket_id'
         });

@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'ticket_type'
     });
     ticket_type.associate = function(models){
-        ticket_type.hasOne(models.price, {
+        ticket_type.hasMany(models.price, {
             foreignKey: 'ticket_type_id',
             //as: 'ticket_type_id'
         });
