@@ -20,7 +20,8 @@ module.exports = function(app){
                 title: req.body.title || null,
                 author_name: req.body.author_name || null,
                 author_last_name: req.body.author_last_name || null,
-                description: req.body.description || null
+                description: req.body.description || null,
+                image_path: req.body.image_path || null
             })
             .then(newMural => {
                 console.log('Created a new mural');
@@ -59,7 +60,8 @@ module.exports = function(app){
                             title: req.body.title || mural.title,
                             author_name: req.body.author_name || mural.author_name,
                             author_last_name: req.body.author_last_name || mural.author_last_name,
-                            description: req.body.description || mural.description
+                            description: req.body.description || mural.description,
+                            image_path: req.body.image_path || mural.image_path
                         })
                         .then(() => res.status(200).json(mural))
                         .catch(err => {
