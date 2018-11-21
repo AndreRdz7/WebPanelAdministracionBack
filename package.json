@@ -1,0 +1,52 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "mocha test --reporter mochawesome",
+    "coverage": "istanbul cover _mocha"
+  },
+  "author": "Equipo Azul",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-load": "^1.1.16",
+    "joi": "^14.0.0",
+    "jsonwebtoken": "^8.2.2",
+    "jwt-simple": "^0.5.5",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.1.0",
+    "moment": "^2.22.2",
+    "mysql2": "^1.6.1",
+    "mysqli": "^3.0.5",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.4.3",
+    "safe-buffer": "5.1.1",
+    "sequelize": "^4.37.10",
+    "sequelize-cli": "^4.0.0",
+    "should": "^13.2.3",
+    "supertest": "^3.3.0"
+  },
+  "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "^2.3.0",
+    "ava": "0.25.0",
+    "istanbul": "^0.4.5",
+    "nodemon": "^1.17.5",
+    "proxyquire": "2.0.0",
+    "semistandard": "^12.0.1",
+    "sinon": "4.4.2",
+    "supertest": "3.0.0"
+  }
+}
