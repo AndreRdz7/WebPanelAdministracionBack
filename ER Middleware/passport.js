@@ -1,7 +1,7 @@
 const passport = require('passport');
 const JwtStrategy = require('passport-jwt').Strategy;
 const { ExtractJwt } = require('passport-jwt');
-//const User = require('./models/user');
+const user = require('./models/user');
 
 module.exports = function(app) {
 
@@ -10,15 +10,15 @@ module.exports = function(app) {
         secretOrKey: process.env.JWT_SECRET
     }, async (payload, done) => {
         try {
-            let User = app.models.schema.user;
+            let user = app.models.schema.user;
             console.log(payload.email);
-            User.find({ where: { email: payload.email } })
-                .then((user) => {
-                    if (!user) {
+            user.find({ where: { email: payload.email } })
+                .then((myuser) => {
+                    if (!myuser) {
                         return done(null, false, { message: 'The user in the token was not found' });
                     }
 
-                    return done(null, JSON.stringify(user));
+                    return done(null, JSON.stringify(myuser));
                 })
                 .catch((err) => {
                     done(err, false);

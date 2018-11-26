@@ -1,14 +1,14 @@
 const express = require('express');
 const load = require('express-load');
 const cors = require('cors');
-// const dotenv = require('dotenv').config({ path: '.env' });
+const dotenv = require('dotenv').config({ path: '.env' });
 const bodyParser = require('body-parser');
-// const passport = require('passport');
+const passport = require('passport');
 
 const port = process.env.PORT || 8081;
 const app = express();
 
-// const passportInstance = require('./passport');
+const passportInstance = require('./passport');
 
 app.set('port', port);
 
@@ -29,6 +29,6 @@ sequelize.sync().done(function () {
     })
 });
 
-// const passportService = new passportInstance(app);
+const passportService = new passportInstance(app);
 
 module.exports = app;

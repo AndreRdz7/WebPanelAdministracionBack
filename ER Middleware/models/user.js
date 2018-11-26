@@ -35,6 +35,26 @@ module.exports = (sequelize, DataTypes) =>
           callback(null, isMatch);
         });
       }
+      user.prototype.generateToken = function() {
+        let expires = moment()
+          .utc()
+          .add({ days: 1 })
+          .unix();
+        
+        let token = jwt.encode(
+          {
+            exp: expires,
+            email: this.email
+          }, 
+          process.env.JWT_SECRET
+        );
+    
+        return {
+          token: token,
+          expires: moment.unix(expires).format(),
+          user: this.id
+        };
+      };
 
     return user;
 }
