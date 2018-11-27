@@ -1,11 +1,11 @@
 module.exports = {
-    username: "equipoazul",
-    password: "Bimbo123!",
+    username: "root",
+    password: "N0sJak1ar0n",
     database: "er",
     mysql: {
       port: 3306,
-      host: "35.236.99.154 ",
+      host: "35.236.15.219",
     },
-    url: "mysql://equipoazul:Bimbo123!@35.236.99.154:3306/er"
+    url: "mysql://root:N0sJak1ar0n@35.236.15.219:3306/er"
   };
   

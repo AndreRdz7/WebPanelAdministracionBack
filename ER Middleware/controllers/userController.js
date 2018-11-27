@@ -137,7 +137,7 @@ module.exports = function (app)
                     });
                 }
 
-                user.verifyPassword(req.body.password, function(err, isMatch) {
+                userNow.verifyPassword(req.body.password, function(err, isMatch) {
                     if (err) {
                         console.log("hubo un error 1")
                         return res.status(500).json({
@@ -152,11 +152,7 @@ module.exports = function (app)
                         });
                     }
                     console.log("la contrasena coincide")
-                    return res.status(200).json({
-                        message: 'OK',
-                        date: userNow,
-                        token: userNow.generateToken()
-                    });
+                    return res.status(200).json(userNow);
                 })
             })
             .catch(err => {

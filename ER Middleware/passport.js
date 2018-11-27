@@ -1,6 +1,7 @@
+/*
 const passport = require('passport');
 //const JwtStrategy = require('passport-jwt').Strategy;
-const { ExtractJwt } = require('passport-jwt');
+//const { ExtractJwt } = require('passport-jwt');
 const user = require('./models/user');
 
 module.exports = function(app) {
@@ -30,3 +31,4 @@ module.exports = function(app) {
     }));
 
 };
+*/

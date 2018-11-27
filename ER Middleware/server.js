@@ -1,7 +1,7 @@
 const express = require('express');
 const load = require('express-load');
 const cors = require('cors');
-const dotenv = require('dotenv').config({ path: '.env' });
+//const dotenv = require('dotenv').config({ path: '.env' });
 const bodyParser = require('body-parser');
 //const passport = require('passport');
 
