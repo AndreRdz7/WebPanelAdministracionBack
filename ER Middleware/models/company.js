@@ -1,5 +1,4 @@
 'use strict'
-// no tiene le id serial ni los created_at y updated_at
 module.exports = (sequelize, DataTypes) => {
     var company = sequelize.define('company',{
         name: DataTypes.STRING,

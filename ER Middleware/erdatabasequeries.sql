@@ -13,8 +13,8 @@ create table company
 	latitude double,
 	longitude double,
 
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table ticket_type
@@ -23,8 +23,8 @@ create table ticket_type
 
 	name varchar(100), 
 
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table mural
@@ -37,8 +37,8 @@ create table mural
 	description text, 
 	image_path varchar(1000),
 
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table place_type
@@ -47,8 +47,8 @@ create table place_type
 
 	name varchar(100), 
 
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table user
@@ -64,8 +64,8 @@ create table user
 	postal_code varchar(100),
 	phone_number varchar(100),
 
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table tour
@@ -76,8 +76,8 @@ create table tour
 	image_path varchar(1000), 
 	description text, 
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table narrative
@@ -87,8 +87,8 @@ create table narrative
 	audio_path varchar(1000), 
 	description text, 
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table date_interval
@@ -99,8 +99,8 @@ create table date_interval
 	end_date date,
 	status enum('in_service', 'out_of_service'),
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table hour_interval
@@ -111,8 +111,8 @@ create table hour_interval
 	end_time time,
 	frequency time,
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table stop
@@ -125,8 +125,8 @@ create table stop
 	description text,
 	image_path varchar(1000),
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table image
@@ -136,8 +136,8 @@ create table image
 	image_path varchar(1000),
 	description text,
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table price
@@ -152,8 +152,8 @@ create table price
 	foreign key(ticket_type_id) references ticket_type(id),
 	foreign key(tour_id) references tour(id),
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table place
@@ -171,8 +171,8 @@ create table place
 	foreign key(place_type_id) references place_type(id),
 	foreign key(narrative_id) references narrative(id),
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table purchase
@@ -188,8 +188,8 @@ create table purchase
 	foreign key(company_id) references company(id),
 	foreign key(user_id) references user(id),
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 
@@ -211,8 +211,8 @@ create table ticket
 	foreign key(purchase_id) references purchase(id),
 	foreign key(price_id) references price(id),
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table bus
@@ -229,8 +229,8 @@ create table bus
 	foreign key(tour_id) references tour(id),
 	foreign key(mural_id) references mural(id),
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table schedule
@@ -243,8 +243,8 @@ create table schedule
 	foreign key(date_interval_id) references date_interval(id),
 	foreign key(hour_interval_id) references hour_interval(id),
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table tour_schedule
@@ -257,8 +257,8 @@ create table tour_schedule
 	foreign key(tour_id) references tour(id),
 	foreign key(schedule_id) references schedule(id),
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table tour_place
@@ -271,8 +271,8 @@ create table tour_place
 	foreign key(tour_id) references tour(id),
 	foreign key(place_id) references place(id),
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table place_image
@@ -285,8 +285,8 @@ create table place_image
 	foreign key(image_id) references image(id),
 	foreign key(place_id) references place(id),
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table tour_stop
@@ -299,16 +299,16 @@ create table tour_stop
 	foreign key(tour_id) references tour(id),
 	foreign key(stop_id) references stop(id),
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table activated_at
 (
 	id serial primary key,
 	
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
 
 create table bracelet
@@ -325,6 +325,6 @@ create table bracelet
 	foreign key(ticket_id) references ticket(id),
 	foreign key(activated_at_id) references activated_at(id),
 
-	created_at datetime default current_timestamp, 
-	updated_at datetime default current_timestamp on update current_timestamp
+	createdAt datetime default current_timestamp, 
+	updatedAt datetime default current_timestamp on update current_timestamp
 );
