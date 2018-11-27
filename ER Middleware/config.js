@@ -4,8 +4,8 @@ module.exports = {
     database: "er",
     mysql: {
       port: 3306,
-      host: "35.236.13.112",
+      host: "35.236.99.154 ",
     },
-    url: "mysql://equipoazul:Bimbo123!@35.236.13.112:3306/er"
+    url: "mysql://equipoazul:Bimbo123!@35.236.99.154:3306/er"
   };
   
