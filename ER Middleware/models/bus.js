@@ -2,6 +2,7 @@
 
 module.exports = (sequelize, DataTypes) => {
     var bus = sequelize.define('bus', {
+        // attributes
         tour_id: DataTypes.BIGINT,
         mural_id: DataTypes.BIGINT,
         capacity: DataTypes.INTEGER,
@@ -10,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
     }, {
         tableName: 'bus'
     });
+    // relations
     bus.associate = function(models){
         bus.belongsTo(models.tour,{
             foreignKey: 'tour_id',

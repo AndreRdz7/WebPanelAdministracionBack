@@ -7,6 +7,7 @@ module.exports = function (app)
 
     let userController = 
     {
+        // GET Request 
         index: function (req, res) 
         {
             user.findAll
@@ -25,7 +26,7 @@ module.exports = function (app)
                     res.json(err);
                 });
         },
-
+        // GET (single) Request
         read: function (req, res) 
         {
             user.findById(req.params.id, {})
@@ -43,7 +44,7 @@ module.exports = function (app)
                     res.json(err);
                 })
         },
-
+        // POST Request
         create: function (req, res)
         {
             user.create({
@@ -68,7 +69,7 @@ module.exports = function (app)
                     res.json(err);
                 });
         },
-
+        // PUT Request
         update: async function (req, res) 
         {
             let newPassword = null
@@ -104,6 +105,7 @@ module.exports = function (app)
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             user.findById(req.params.id)
                 .then(user => {
@@ -124,7 +126,7 @@ module.exports = function (app)
                     res.json(err);
                 })
         },
-
+        // Login Funcion
         login: function(req, res) {
             user.findOne({
                 where: { email: req.body.email }

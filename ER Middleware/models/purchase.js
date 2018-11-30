@@ -3,6 +3,7 @@ module.exports = (sequelize, DataTypes) =>
 {
     var purchase = sequelize.define('purchase',
         {
+            // attributes
             company_id: DataTypes.BIGINT,
             user_id: DataTypes.BIGINT,
             sub_total: DataTypes.DOUBLE,
@@ -11,7 +12,7 @@ module.exports = (sequelize, DataTypes) =>
         {
             tableName: 'purchase'
         });
-
+        // relations
     purchase.associate = function (models)
     {
         purchase.belongsTo(models.company,

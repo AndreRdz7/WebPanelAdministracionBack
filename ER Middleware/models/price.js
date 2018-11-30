@@ -3,6 +3,7 @@ module.exports = (sequelize, DataTypes) =>
 {
     var price = sequelize.define('price',
         {
+            // attributes
             ticket_type_id: DataTypes.BIGINT,
             tour_id: DataTypes.BIGINT,
             amount: DataTypes.DOUBLE,
@@ -10,7 +11,7 @@ module.exports = (sequelize, DataTypes) =>
         {
             tableName: 'price'
         });
-
+        // relations
     price.associate = function (models)
     {
         price.belongsTo(models.ticket_type,

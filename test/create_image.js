@@ -5,7 +5,8 @@ const joi = require('joi');
 
 
 let baseURL = supertest("https://reqres.in");
-let image = "/api/image";
+let imag
+// Mocha POST testing to expect a HTTP 200 response
 
 describe('POST Request',()=>{
     let post_resp;

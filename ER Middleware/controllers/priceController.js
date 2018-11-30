@@ -4,6 +4,7 @@ module.exports = function(app){
     let price = app.models.schema.price;
 
     let priceController = {
+        // GET Request
         index: function(req,res){
             price.findAll({})
             .then(function(price){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             price.create({
                 ticket_type_id: req.body.ticket_type_id || null,
@@ -30,6 +32,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let price_id = req.params.id;
             price.findById(req.params.id,{})
@@ -45,6 +48,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             price.findById(req.params.id, {})
                 .then(price =>{
@@ -68,6 +72,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             price.findById(req.params.id)
                 .then(price => {
@@ -88,7 +93,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         }
-    }//place_imageController
+    }
 
     return priceController;
 };

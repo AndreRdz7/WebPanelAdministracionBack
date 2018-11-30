@@ -3,6 +3,7 @@ module.exports = (sequelize, DataTypes) =>
 {
     var stop = sequelize.define('stop',
     {
+        // attributes
         name: DataTypes.STRING,
         longitude: DataTypes.DOUBLE,
         latitude: DataTypes.DOUBLE,
@@ -12,6 +13,7 @@ module.exports = (sequelize, DataTypes) =>
     {
         tableName: 'stop'
     });
+    // relations
     stop.associate = function(models){
         stop.hasMany(models.tour_stop,{
             foreignKey: 'stop_id',

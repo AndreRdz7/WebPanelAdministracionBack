@@ -6,6 +6,7 @@ const joi = require('joi');
 
 let baseURL = supertest("https://reqres.in");
 let ticket = "/api/ticket";
+// Mocha POST testing to expect a HTTP 200 response
 
 describe('POST Request',()=>{
     let post_resp;

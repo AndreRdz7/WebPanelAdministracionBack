@@ -3,6 +3,7 @@ module.exports = (sequelize, DataTypes) =>
 {
     var place = sequelize.define('place',
         {
+            // attributes
             place_type_id: DataTypes.BIGINT,
             narrative_id: DataTypes.BIGINT,
             name: DataTypes.STRING,
@@ -13,7 +14,7 @@ module.exports = (sequelize, DataTypes) =>
         {
             tableName: 'place'
         });
-
+        // relations
     place.associate = function (models)
     {
         place.belongsTo(models.place_type,

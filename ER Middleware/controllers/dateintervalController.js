@@ -4,6 +4,7 @@ module.exports = function(app){
     let date_interval = app.models.schema.date_interval;
 
     let date_intervalController = {
+        // GET Request
         index: function(req,res){
             date_interval.findAll({})
             .then(function(date_interval){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             date_interval.create({
                 start_date: req.body.start_date || null,
@@ -30,6 +32,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let date_interval_id = req.params.id;
             date_interval.findById(req.params.id,{})
@@ -45,6 +48,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             date_interval.findById(req.params.id, {})
                 .then(date_interval =>{
@@ -68,6 +72,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             date_interval.findById(req.params.id)
                 .then(date_interval => {

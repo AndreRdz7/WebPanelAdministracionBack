@@ -3,6 +3,7 @@ module.exports = (sequelize, DataTypes) =>
 {
     var ticket = sequelize.define('ticket',
     {
+        // attributes
         purchase_id: DataTypes.BIGINT,
         price_id: DataTypes.BIGINT,
         client_name: DataTypes.STRING,
@@ -16,7 +17,7 @@ module.exports = (sequelize, DataTypes) =>
     {
             tableName: 'ticket'
     });
-
+    // relations
     ticket.associate = function (models)
     {
         ticket.belongsTo(models.purchase,

@@ -4,6 +4,7 @@ module.exports = function(app){
     let ticket_type = app.models.schema.ticket_type;
 
     let ticket_typeController = {
+        // GET Request
         index: function(req,res){
             ticket_type.findAll({})
             .then(function(ticket_type){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             ticket_type.create({
                 name: req.body.name || null
@@ -28,6 +30,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let ticket_type_id = req.params.id;
             ticket_type.findById(req.params.id,{})
@@ -43,6 +46,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             ticket_type.findById(req.params.id, {})
                 .then(ticket_type =>{
@@ -64,6 +68,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             ticket_type.findById(req.params.id)
                 .then(ticket_type => {
@@ -84,7 +89,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         }
-    }//ticket_typeController
+    }
 
     return ticket_typeController;
 };

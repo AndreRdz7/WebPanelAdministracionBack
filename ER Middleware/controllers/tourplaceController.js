@@ -4,6 +4,7 @@ module.exports = function(app){
     let tour_place = app.models.schema.tour_place;
 
     let tour_placeController = {
+        // GET Request
         index: function(req,res){
             tour_place.findAll({})
             .then(function(tour_place){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             tour_place.create({
                 tour_id: req.body.tour_id || null,
@@ -29,6 +31,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let tour_place_id = req.params.id;
             tour_place.findById(req.params.id,{})
@@ -44,6 +47,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             tour_place.findById(req.params.id, {})
                 .then(tour_place =>{
@@ -66,6 +70,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             tour_place.findById(req.params.id)
                 .then(tour_place => {
@@ -86,7 +91,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         }
-    }//tour_placeController
+    }
 
     return tour_placeController;
 };

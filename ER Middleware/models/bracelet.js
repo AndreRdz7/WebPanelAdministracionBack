@@ -2,6 +2,7 @@
 
 module.exports = (sequelize, DataTypes) => {
     var bracelet = sequelize.define('bracelet', {
+        // attributes
         ticket_id: DataTypes.BIGINT,
         tour_id: DataTypes.BIGINT,
         activated_at_id: DataTypes.BIGINT,
@@ -9,6 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     }, {
         tableName: 'bracelet'
     });
+    // relations
     bracelet.associate = function(models){
         bracelet.belongsTo(models.ticket,{
             foreignKey: 'ticket_id',

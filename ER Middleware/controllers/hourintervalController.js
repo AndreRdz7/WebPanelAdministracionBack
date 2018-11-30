@@ -4,6 +4,7 @@ module.exports = function(app){
     let hour_interval = app.models.schema.hour_interval;
 
     let hour_intervalController = {
+        // GET Request
         index: function(req,res){
             hour_interval.findAll({})
             .then(function(hour_interval){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             hour_interval.create({
                 start_time: req.body.start_time || null,
@@ -30,6 +32,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let hour_interval_id = req.params.id;
             hour_interval.findById(req.params.id,{})
@@ -45,6 +48,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             hour_interval.findById(req.params.id, {})
                 .then(hour_interval =>{
@@ -68,6 +72,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             hour_interval.findById(req.params.id)
                 .then(hour_interval => {

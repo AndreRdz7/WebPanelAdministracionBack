@@ -6,7 +6,7 @@ const joi = require('joi');
 
 let baseURL = supertest("https://reqres.in");
 let ticket = "/api/ticket";
-
+// Multiple Mocha GET testing to expect multiple HTTP 200 responses
 describe('First Request to Get Tickets',()=>{
     let res;
     it("See Response", async function () {

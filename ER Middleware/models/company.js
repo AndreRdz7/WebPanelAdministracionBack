@@ -1,6 +1,7 @@
 'use strict'
 module.exports = (sequelize, DataTypes) => {
     var company = sequelize.define('company',{
+        // attributes
         name: DataTypes.STRING,
         full_name: DataTypes.STRING,
         phone_number: DataTypes.STRING,
@@ -14,6 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     },{
         tableName: 'company'
     });
+    // relations
     company.associate = function(models){
         company.hasMany(models.purchase, {
             foreignKey: 'company_id',

@@ -8,6 +8,7 @@ module.exports = (sequelize, DataTypes) =>
 {
     var user = sequelize.define('user', 
     {
+        // attribues 
         user_type: DataTypes.ENUM('administrator', 'client'),
         name: DataTypes.STRING,
         last_name: DataTypes.STRING,
@@ -20,6 +21,7 @@ module.exports = (sequelize, DataTypes) =>
     {
         tableName: 'user'
     });
+    // relations
     user.associate = function(models){
         user.hasMany(models.purchase, {
             foreignKey: 'user_id',

@@ -6,7 +6,7 @@ const joi = require('joi');
 
 let baseURL = supertest("https://reqres.in");
 let tour_place = "/api/tour_place";
-
+// Multiple Mocha GET testing to expect multiple HTTP 200 responses
 describe('First Request to Get Companies',()=>{
     let res;
     it("See Response", async function () {

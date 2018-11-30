@@ -4,6 +4,7 @@ module.exports = function(app){
     let tour_stop = app.models.schema.tour_stop;
 
     let tour_stopController = {
+        // GET Request
         index: function(req,res){
             tour_stop.findAll({})
             .then(function(tour_stop){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             tour_stop.create({
                 tour_id: req.body.tour_id || null,
@@ -29,6 +31,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let tour_stop_id = req.params.id;
             tour_stop.findById(req.params.id,{})
@@ -44,6 +47,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             tour_stop.findById(req.params.id, {})
                 .then(tour_stop =>{
@@ -66,6 +70,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             tour_stop.findById(req.params.id)
                 .then(tour_stop => {

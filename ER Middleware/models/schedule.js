@@ -3,13 +3,14 @@ module.exports = (sequelize, DataTypes) =>
 {
     var schedule = sequelize.define('schedule',
         {
+            // attributes
             date_interval_id: DataTypes.BIGINT,
             hour_interval_id: DataTypes.BIGINT
         },
         {
             tableName: 'schedule'
         });
-
+        // relations
     schedule.associate = function (models)
     {
         schedule.belongsTo(models.date_interval,

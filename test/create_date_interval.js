@@ -7,6 +7,8 @@ const joi = require('joi');
 let baseURL = supertest("https://reqres.in");
 let date_interval = "/api/date_interval";
 
+// Mocha POST testing to expect a HTTP 200 response
+
 describe('POST Request',()=>{
     let post_resp;
     it('makes a POST call ',async ()=>{

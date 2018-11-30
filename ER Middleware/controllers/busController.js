@@ -4,6 +4,7 @@ module.exports = function(app){
     let bus = app.models.schema.bus;
 
     let busController = {
+        // GET Request
         index: function(req,res){
             bus.findAll({})
             .then(function(bus){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             bus.create({
                 tour_id: req.body.tour_id || null,
@@ -32,6 +34,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let bus_id = req.params.id;
             bus.findById(req.params.id,{})
@@ -47,6 +50,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             bus.findById(req.params.id, {})
                 .then(bus =>{
@@ -72,6 +76,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             bus.findById(req.params.id)
                 .then(bus => {
@@ -92,7 +97,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         }
-    }//busController
+    }
 
     return busController;
 };

@@ -6,7 +6,7 @@ const joi = require('joi');
 
 let baseURL = supertest("https://reqres.in");
 let ticket_type = "/api/ticket_type/1";
-
+// Mocha PUT testing to expect a HTTP 200 response
 describe('PUT Request', () => {
     let put_resp;
     it('makes a PUT call ', async () => {

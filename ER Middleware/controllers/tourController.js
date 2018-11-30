@@ -4,6 +4,7 @@ module.exports = function(app){
     let tour = app.models.schema.tour;
 
     let tourController = {
+        // GET Request
         index: function(req,res){
             tour.findAll({})
             .then(function(tour){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             tour.create({
                 name: req.body.name || null,
@@ -30,6 +32,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let tour_id = req.params.id;
             tour.findById(req.params.id,{})
@@ -45,6 +48,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             tour.findById(req.params.id, {})
                 .then(tour =>{
@@ -68,6 +72,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             tour.findById(req.params.id)
                 .then(tour => {

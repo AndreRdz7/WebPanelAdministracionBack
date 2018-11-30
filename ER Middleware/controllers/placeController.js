@@ -4,6 +4,7 @@ module.exports = function(app){
     let place = app.models.schema.place;
 
     let placeController = {
+        // GET Request
         index: function(req,res){
             place.findAll({})
             .then(function(place){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             place.create({
                 place_type_id: req.body.place_type_id || null,
@@ -33,6 +35,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let place_id = req.params.id;
             place.findById(req.params.id,{})
@@ -48,6 +51,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             place.findById(req.params.id, {})
                 .then(place =>{
@@ -74,6 +78,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             place.findById(req.params.id)
                 .then(place => {
@@ -94,7 +99,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         }
-    }//place_imageController
+    }
 
     return placeController;
 };

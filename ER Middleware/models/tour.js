@@ -3,6 +3,7 @@ module.exports = (sequelize, DataTypes) =>
 {
     var tour = sequelize.define('tour',
         {
+            // attributes
             name: DataTypes.STRING,
             image_path: DataTypes.STRING,
             description: DataTypes.TEXT
@@ -10,6 +11,7 @@ module.exports = (sequelize, DataTypes) =>
         {
             tableName: 'tour'
         });
+        // relations
         tour.associate = function(models){
             tour.hasMany(models.price,{
                 foreignKey: 'tour_id',

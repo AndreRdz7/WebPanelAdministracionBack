@@ -4,6 +4,7 @@ module.exports = function(app){
     let company = app.models.schema.company;
 
     let companyController = {
+        // GET Request
         index: function(req,res){
             company.findAll({})
             .then(function(company){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             company.create({
                 name: req.body.name || null,
@@ -37,6 +39,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let company_id = req.params.id;
             company.findById(req.params.id,{})
@@ -52,6 +55,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT request
         update: function(req, res){
             company.findById(req.params.id, {})
                 .then(company =>{
@@ -83,6 +87,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             company.findById(req.params.id)
                 .then(company => {
@@ -103,7 +108,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         }
-    }//companyController
+    }
 
     return companyController;
 };

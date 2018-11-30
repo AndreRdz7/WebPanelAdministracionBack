@@ -1,3 +1,4 @@
+// Connection to DB
 module.exports = {
     username: "root",
     password: "N0sJak1ar0n",

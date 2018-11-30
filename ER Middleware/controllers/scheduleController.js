@@ -4,6 +4,7 @@ module.exports = function(app){
     let schedule = app.models.schema.schedule;
 
     let scheduleController = {
+        // GET Request
         index: function(req,res){
             schedule.findAll({})
             .then(function(schedule){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             schedule.create({
                 date_interval_id: req.body.date_interval_id || null,
@@ -29,6 +31,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let schedule_id = req.params.id;
             schedule.findById(req.params.id,{})
@@ -44,6 +47,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             schedule.findById(req.params.id, {})
                 .then(schedule =>{
@@ -66,6 +70,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             schedule.findById(req.params.id)
                 .then(schedule => {

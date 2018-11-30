@@ -1,5 +1,5 @@
 const joi = require('joi');
-
+// attribute validations
 module.exports = {
     schema : joi.object().keys({
         user_type : joi.string().valid('administrator','client').required(),

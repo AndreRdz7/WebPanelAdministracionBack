@@ -5,6 +5,7 @@ module.exports = function(app){
 
     let muralController = {
         index: function(req,res){
+            // GET Request
             mural.findAll({})
             .then(function(mural){
                 console.log('Succes at getting all murals from the BD');
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             mural.create({
                 title: req.body.title || null,
@@ -32,6 +34,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) request
         read: function(req,res){
             let mural_id = req.params.id;
             mural.findById(req.params.id,{})

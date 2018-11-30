@@ -4,6 +4,7 @@ module.exports = function(app){
     let purchase = app.models.schema.purchase;
 
     let purchaseController = {
+        // GET Request
         index: function(req,res){
             purchase.findAll({})
             .then(function(purchase){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             purchase.create({
                 company_id: req.body.company_id || null,
@@ -31,6 +33,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let purchase_id = req.params.id;
             purchase.findById(req.params.id,{})
@@ -46,6 +49,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             purchase.findById(req.params.id, {})
                 .then(purchase =>{
@@ -70,6 +74,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             purchase.findById(req.params.id)
                 .then(purchase => {
@@ -90,7 +95,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         }
-    }//place_imageController
+    }
 
     return purchaseController;
 };

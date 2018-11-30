@@ -4,6 +4,7 @@ module.exports = function(app){
     let bracelet = app.models.schema.bracelet;
 
     let braceletController = {
+        // GET Request
         index: function(req,res){
             bracelet.findAll({})
             .then(function(bracelet){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             bracelet.create({
                 ticket_id: req.body.ticket_id || null,
@@ -31,6 +33,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let bracelet_id = req.params.id;
             bracelet.findById(req.params.id,{})
@@ -46,6 +49,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             bracelet.findById(req.params.id, {})
                 .then(bracelet =>{
@@ -70,6 +74,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             bracelet.findById(req.params.id)
                 .then(bracelet => {
@@ -90,7 +95,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         }
-    }//braceltController
+    }
 
     return braceletController;
 };

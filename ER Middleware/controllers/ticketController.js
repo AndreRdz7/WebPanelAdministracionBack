@@ -4,6 +4,7 @@ module.exports = function(app){
     let ticket = app.models.schema.ticket;
 
     let ticketController = {
+        // GET Request
         index: function(req,res){
             ticket.findAll({})
             .then(function(ticket){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             ticket.create({
                 purchase_id: req.body.purchase_id || null,
@@ -36,6 +38,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let ticket_id = req.params.id;
             ticket.findById(req.params.id,{})
@@ -51,6 +54,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             ticket.findById(req.params.id, {})
                 .then(ticket =>{
@@ -80,6 +84,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             ticket.findById(req.params.id)
                 .then(ticket => {
@@ -100,7 +105,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         }
-    }//ticketController
+    }
 
     return ticketController;
 };

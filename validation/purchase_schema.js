@@ -1,5 +1,5 @@
 const joi = require('joi');
-
+// attribute validations
 module.exports = {
     schema : joi.object().keys({
         company_id : joi.number().integer().integer().required(),

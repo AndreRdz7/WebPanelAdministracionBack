@@ -4,6 +4,7 @@ module.exports = function(app){
     let activated_at = app.models.schema.activated_at;
 
     let activated_atController = {
+        // GET Request
         index: function(req,res){
             activated_at.findAll({})
             .then(function(activated_at){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             activated_at.create({
             })
@@ -27,6 +29,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let activated_at_id = req.params.id;
             activated_at.findById(req.params.id,{})
@@ -42,6 +45,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             activated_at.findById(req.params.id, {})
                 .then(activated_at =>{
@@ -62,6 +66,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             activated_at.findById(req.params.id)
                 .then(activated_at => {
@@ -82,7 +87,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         }
-    }//activated_atController
+    }
 
     return activated_atController;
 };

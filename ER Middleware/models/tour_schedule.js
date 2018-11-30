@@ -3,13 +3,14 @@ module.exports = (sequelize, DataTypes) =>
 {
     var tour_schedule = sequelize.define('tour_schedule',
         {
+            // attributes
             tour_id: DataTypes.BIGINT,
             schedule_id: DataTypes.BIGINT
         },
         {
             tableName: 'tour_schedule'
         });
-
+        // relations
     tour_schedule.associate = function (models)
     {
         tour_schedule.belongsTo(models.tour,

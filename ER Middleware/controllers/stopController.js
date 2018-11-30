@@ -4,6 +4,7 @@ module.exports = function(app){
     let stop = app.models.schema.stop;
 
     let stopController = {
+        // GET Request
         index: function(req,res){
             stop.findAll({})
             .then(function(stop){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             stop.create({
                 name: req.body.name || null,
@@ -32,6 +34,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let stop_id = req.params.id;
             stop.findById(req.params.id,{})
@@ -47,6 +50,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             stop.findById(req.params.id, {})
                 .then(stop =>{
@@ -72,6 +76,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             stop.findById(req.params.id)
                 .then(stop => {

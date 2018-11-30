@@ -4,6 +4,7 @@ module.exports = function(app){
     let narrative = app.models.schema.narrative;
 
     let narrativeController = {
+        // GET Request
         index: function(req,res){
             narrative.findAll({})
             .then(function(narrative){
@@ -15,6 +16,7 @@ module.exports = function(app){
                 res.json(err);
             })
         },
+        // POST Request
         create: function(req,res){
             narrative.create({
                 audio_path: req.body.audio_path || null,
@@ -29,6 +31,7 @@ module.exports = function(app){
                 res.json(err);
             });
         },
+        // GET (single) Request
         read: function(req,res){
             let narrative_id = req.params.id;
             narrative.findById(req.params.id,{})
@@ -44,6 +47,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // PUT Request
         update: function(req, res){
             narrative.findById(req.params.id, {})
                 .then(narrative =>{
@@ -66,6 +70,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         },
+        // DELETE Request
         delete: function (req, res) {
             narrative.findById(req.params.id)
                 .then(narrative => {
@@ -86,7 +91,7 @@ module.exports = function(app){
                     res.json(err);
                 })
         }
-    }//narrativeController
+    }
 
     return narrativeController;
 };

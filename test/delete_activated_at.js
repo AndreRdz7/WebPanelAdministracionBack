@@ -6,6 +6,7 @@ const joi = require('joi');
 
 let baseURL = supertest("https://reqres.in");
 let activated_at = "/api/activated_at/1";
+// Mocha DELETE testing to expect a HTTP 200 response
 
 describe('DELETE Request', () => {
     let del_resp;
