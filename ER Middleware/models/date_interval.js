@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) =>
     {
         tableName: 'date_interval'
     });
+    // relationsS
     date_interval.associate = function(models){
         date_interval.hasMany(models.schedule, {
             foreignKey: 'date_interval_id',
