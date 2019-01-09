@@ -1,4 +1,5 @@
 // Connection to DB
+// This DB no longer exists, do not try to reach it
 module.exports = {
     username: "root",
     password: "N0sJak1ar0n",
